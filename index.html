@@ -4,31 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evan Lo Assignment Portal</title>
+    <title>Brienna Sambrano WDD230 Assignment Portal</title>
+    <meta name="description" content="Assignment portal for Brienna Sambrano in WDD230: Web Frontend Development at BYU-Idaho.">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <img class="me" src="images/profile.jpg.jpg" alt="profile-image">
-    
-        <h1 class="name"><span style="letter-spacing:0.1em">Evan Lo</span></h1>
+        <h1>Brienna Sambrano 
+            <img src="images/briennaProfilePic.jpg" alt="Brienna Sambrano Profile Pic">
+        </h1>
+        
     </header>
     <main>
-        <h2>CIT 230: Assignment Portal</h2>
+        <h2>WDD230: Assignment Portal </h2>
         <ul>
-            <li>Lesson 02: <a href="#">Assignment Link</a></li>
-            <li>Lesson 03: <a href="#">Assignment Link</a></li>
-            <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a></li>
+            <li>Week 2: <a href="#">Assignment Name</a></li>
+            <li>Week 3: <a href="#">Assignment Name</a></li>
         </ul>
     </main>
     <footer>
-        <span style="letter-spacing:0.05em">&copy; | Evan Lo | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
-        <br>Last Updated: <span id="last"></span></span>
+        <p> &copy; <span id="currentdate"></span> | Brienna Sambrano | Georgia | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="bottom">Last updated on <span id="dateandtime"></span></p>
     </footer>
-    <script>
-        document.getElementById('last').textContent=document.lastModified;
+    <script src="js/index.js">
     </script>
 </body>
-
 </html>
