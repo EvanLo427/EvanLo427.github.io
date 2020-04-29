@@ -1,10 +1,34 @@
-<!doctype html>
-<html lang-"en-us">
-    <head>
-        <title>Test Page</title>
-    </head>
-    <body>
-        <h1>Test Page</h1>
-        <p>This is a paragraph.</p>
-    </body>    
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evan Lo Assignment Portal</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <img class="me" src="images/profile.jpg" alt="personal-image">
+    
+        <h1 class="name"><span style="letter-spacing:0.1em">Evan Lo</span></h1>
+    </header>
+    <main>
+        <h2>CIT 230: Assignment Portal</h2>
+        <ul>
+            <li>Lesson 02: <a href="#">Assignment Link</a></li>
+            <li>Lesson 03: <a href="#">Assignment Link</a></li>
+            <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a></li>
+        </ul>
+    </main>
+    <footer>
+        <span style="letter-spacing:0.05em">&copy; | Evan Lo | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+        <br>Last Updated: <span id="last"></span></span>
+    </footer>
+    <script>
+        document.getElementById('last').textContent=document.lastModified;
+    </script>
+</body>
+
 </html>
