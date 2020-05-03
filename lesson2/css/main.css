@@ -1,20 +1,41 @@
 html {
-    font-family: Georgia, serif;
-    font-size: 14pt;
     margin: 0 auto;
     max-width: 960px;
 }
 
-header, footer {
-    background-color: royalblue;
-    padding: 0.5em;
-    color: white ;
-    border-radius: 0.5em;
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 main {
-    padding: 0.5em;
-    margin: 0px 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+    grid-gap: 0.8em;
+    padding: 0.8em;
+}
+
+section{
+    text-align: left;
+    display: block;
+    background-color:#f0ead8;
+    border-radius: 2.5px;
+}
+section img{
+    max-width: 90%;
+    padding-left: 1.30em;
+}
+section p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    text-align: left;
+    padding-left: 1.30em;
+    padding-right: 1.30em;
+
 }
 
 h1 {
@@ -23,11 +44,28 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    border-bottom: solid darkblue 2px;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0.5em;
+}
+
 img {
     float: right;
     border-radius: 0.1em;
     box-shadow: 1px 1px 5px 5px rgb(116, 115, 115);
 
+}
+
+
+header, footer {
+    background-color: royalblue;
+    padding: 0.5em;
+    color: white ;
+    border-radius: 0.5em;
 }
 
 footer {
@@ -41,13 +79,4 @@ footer a {
 .bottom {
     color: yellow;
     font-size: 0.75em;
-}
-
-h2 {
-    border-bottom: solid darkblue 2px;
-    font-size: 1.5em;
-}
-
-p {
-    margin: 0.5em;
 }
