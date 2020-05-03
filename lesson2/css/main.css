@@ -80,3 +80,42 @@ footer a {
     color: yellow;
     font-size: 0.75em;
 }
+
+/*computer viewport*/
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: none;
+        width: 77.3em;
+        margin: auto;
+    }
+    
+	header, footer{
+        max-width: none;
+		width: 60em;
+    }
+
+    section image{
+        max-width: 84%;
+        padding: 0em 1.30em 0em 1.30em;
+    }
+    
+}
+
+/*tablet viewport*/
+@media only screen and (min-width: 38em) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    header,
+    footer {
+      max-width: 45em;
+    }
+  
+    section image {
+      max-width: 84%;
+      padding: 0em 1.30em 0em 1.30em;
+    }
+  
+  }
