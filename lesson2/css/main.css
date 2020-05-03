@@ -4,29 +4,19 @@ body {
     font-size: 14px;
 }
 
-h1, h3 {
+h1, h2, h3 {
     color: white;
-    margin: 0;
-}
-
-h1 {
-    margin: 0;
-}
-
-h2 {
-    margin: 0;
-}
-
-h3 {
     margin: 0;
 }
 
 h3, .principle p, .principle a {
     margin: 0;
     padding: 1em;
+    text-align: center;
 }
 
 header, footer {
+    text-align: center;
     background-color: royalblue;
 }
 
@@ -53,7 +43,6 @@ img {
 
 footer, footer a {
     color: white;
-    text-align: center;
     font-size: 18px;
 }
 
