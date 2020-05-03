@@ -1,5 +1,5 @@
 body {
-    font-family: "Noto Sans", sans-serif;
+    font-family: ;
     font-size: 16px;
     box-sizing: border-box;
     display: flex;
@@ -43,6 +43,7 @@ body {
   footer {
     margin: 1rem 0 0 0;
   }
+
   header {
     background-color: royalblue;
     display: grid;
@@ -55,21 +56,25 @@ body {
     border-radius: 15px;
     color: white;
   }
+
   h1 {
     margin: 10px;
     font-size: 2rem;
     grid-column: span 3;
   }
+
   h2 {
       margin: 10px;
     font-size: 1.5rem;
     grid-column: span 3;
   }
+
   h3 {
    margin: 10px;
     font-size: 1rem;
     grid-column: span 3;
   }
+
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -86,6 +91,7 @@ body {
     text-align: center;
     border-radius: 15px;
   }
+  
     /* unvisited link */
   a:link {
       color: white;
