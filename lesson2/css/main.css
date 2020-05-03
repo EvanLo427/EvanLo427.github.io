@@ -27,16 +27,19 @@ img {
     margin-top: 1em;
 }
 
-h1, h2, h3, p, link {
+h1, h2, h3, p, a {
     color: white;
     margin: 0;
+    text-align: center;
 }
 
 h3{
+    color: white;
     font-family: 'Varela Round', cursive;
 }
 
 p{
+    color: white;
     font-family: 'Roboto Condensed', cursive;
 }
 
