@@ -27,7 +27,7 @@ img {
     margin-top: 1em;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, link {
     color: white;
     margin: 0;
 }
