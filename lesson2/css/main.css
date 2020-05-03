@@ -1,29 +1,24 @@
 body {
-    font-family: 'Josefin Slab', serif;
     margin: 0 auto;
     max-width: 940px;
     font-size: 14px;
 }
 
 h1, h3 {
-    font-family: 'Oswald', sans-serif;
     color: white;
     margin: 0;
 }
 
 h1 {
-    border-bottom: dotted 2px rgb(196, 245, 248);
+    margin: 0;
 }
 
 h2 {
-    font-family: 'Jura', sans-serif;
-    color:  rgb(196, 245, 248);
     margin: 0;
 }
 
 h3 {
-    background-color:  rgb(54, 115, 119);
-    border-bottom: dotted 2px rgb(196, 245, 248);
+    margin: 0;
 }
 
 h3, .principle p, .principle a {
@@ -32,13 +27,11 @@ h3, .principle p, .principle a {
 }
 
 header, footer {
-    background-color: rgb(54, 115, 119);
+    background-color: royalblue;
 }
 
 header {
     padding: 2em;
-    border-top: dotted 2px rgb(196, 245, 248);
-    border-bottom: dotted 2px rgb(196, 245, 248);
 }
 
 .main-grid {
@@ -48,11 +41,9 @@ header {
 }
 
 .principle {
-    border: solid  rgb(54, 115, 119) 2px;
-    border-radius: 1em;
     overflow: hidden;
     margin: 2em 0em;
-    background-color:  rgb(196, 245, 248);
+    background-color:  royalblue;
     }
 
 img {
@@ -68,8 +59,6 @@ footer, footer a {
 
 footer {
     padding: 1.5em;
-    border-top: dotted 2px rgb(196, 245, 248);
-    border-bottom: dotted 2px rgb(196, 245, 248);
 }
 
 
@@ -77,7 +66,6 @@ footer {
     .main-grid {
         grid-template-columns: 1fr 1fr;
     }
-
     body {
         font-size: 16px;
     }
@@ -87,7 +75,6 @@ footer {
     .main-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
     body {
         font-size: 18px;
     }
