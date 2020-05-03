@@ -1,170 +1,109 @@
-html {
-    font-family: Georgia, serif;
-    font-size: 14pt;
-    margin: 0 auto;
-    max-width: 960px;
-}
-
-header, footer {
-    background-color: royalblue;
-    padding: 0.5em;
-    color: white ;
-    border-radius: 0.5em;
-}
-
-main {
-    padding: 0.5em;
-    margin: 0px 50px;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin: 50px;
-    text-align: center;
-}
-
-img {
-    float: right;
-    border-radius: 0.1em;
-    box-shadow: 1px 1px 5px 5px rgb(116, 115, 115);
-
-}
-
-footer {
-    text-align: center;
-}
-
-footer a {
-    color: white;
-}
-
-.bottom {
-    color: yellow;
-    font-size: 0.75em;
-}
-
-h2 {
-    border-bottom: solid darkblue 2px;
-    font-size: 1.5em;
-}
-
-p {
-    margin: 0.5em;
-}
-
-/********************************************/
-
 body {
-    background-color: var(--color-contrast-lower);
-}
-
-.container {
-    max-width: var(--breakpoint-md);
-    margin: 0 auto;
-}
-
-.grid {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridarea {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  .section-title {
+  margin: 10px;
+  text-align: center;
+    }
+  .grid-section {
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 15px;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .grid-section:last-child {
+      margin: 0;
+  }
+  
+  .grid-image {
+    height: auto;
+    width: 100%;
+    margin-top:15px;
+  }
+  
+  header,
+  main,
+  footer {
+    margin: 1rem 0 0 0;
+  }
+  header {
+    background-color: darkslategrey;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: var(--space-lg);
-    margin: var(--space-lg) 0;
-}
-
-.grid div {
-    background-color: var(--color-white);
-}
-
-header {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: var(--space-xs);
+    padding: 7px;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-h1 {
-    font-size: 1.8em;
-}
-
-.shadow-2 {
-    box-shadow: var(--shadow-2);
-}
-
-h2 {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: var(--component-padding);
-    margin: 0;
-}
-
-main,
-.component-padding {
-    padding: var(--component-padding);
-}
-
-img {
-    width: 100%;
-    height: auto;
-    box-shadow: var(--shadow-1);
-    margin: var(--space-lg) 0;
-}
-
-footer {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: var(--space-xs);
+    border-radius: 15px;
+    color: white;
+  }
+  h1 {
+    margin: 10px;
+    font-size: 2rem;
+    grid-column: span 3;
+  }
+  h2 {
+      margin: 10px;
+    font-size: 1.5rem;
+    grid-column: span 3;
+  }
+  h3 {
+   margin: 10px;
+    font-size: 1rem;
+    grid-column: span 3;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-area: main;
+  }
+  
+  footer {
+    background-color: darkslategrey;
+    color: white;
+    padding: 7px;
+    font-size: 1rem;
+    grid-area: footer;
     text-align: center;
-}
-
-/* links */
-
-main a:link,
-main a:visited {
-    color: inherit;
-}
-
-main a:hover:hover {
-    color: var(--color-accent-dark);
-}
-
-footer a:link,
-footer a:visited {
-    display: inline;
-    color: var(--white);
-
-}
-
-footer a:hover {
-    color: var(--color-accent);
-}
-
-/* responsive */
-
-@media (min-width: 32rem) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+  }
+    /* unvisited link */
+  a:link {
+      color: white;
     }
-
-    .grid div {
-        margin: var(--space-xs) 0;
-        background-color: var(--color-white);
+    
+    /* visited link */
+    a:visited {
+      color: white;
     }
-
-    h1 {
-        font-size: 2.5em;
+    
+    /* mouse over link */
+    a:hover {
+      color: white;
     }
-
-    main {
-        padding: 0;
+    
+    /* selected link */
+    a:active {
+      color: white;
     }
-}
-
-@media (min-width: 48rem) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .grid div {
-        margin: var(--space-md) 0;
-        background-color: var(--color-white);
-    }
-}
+  
+  
