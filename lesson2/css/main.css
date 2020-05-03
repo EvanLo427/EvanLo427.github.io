@@ -21,7 +21,7 @@ body {
   text-align: center;
     }
   .grid-section {
-    background-color: darkslategrey;
+    background-color: royalblue;
     color: white;
     border-radius: 15px;
     text-align: left;
@@ -44,7 +44,7 @@ body {
     margin: 1rem 0 0 0;
   }
   header {
-    background-color: darkslategrey;
+    background-color: royalblue;
     display: grid;
     grid-template-columns: 1fr;
     padding: 7px;
@@ -78,7 +78,7 @@ body {
   }
   
   footer {
-    background-color: darkslategrey;
+    background-color: royalblue;
     color: white;
     padding: 7px;
     font-size: 1rem;
