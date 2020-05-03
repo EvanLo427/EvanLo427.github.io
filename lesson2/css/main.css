@@ -4,22 +4,6 @@ body {
     font-size: 14px;
 }
 
-h1, h2, h3 {
-    color: white;
-    margin: 0;
-}
-
-h3, .principle p, .principle a {
-    margin: 0;
-    padding: 1em;
-    text-align: center;
-}
-
-header, footer {
-    text-align: center;
-    background-color: royalblue;
-}
-
 header {
     padding: 2em;
 }
@@ -34,11 +18,27 @@ header {
     overflow: hidden;
     margin: 2em 0em;
     background-color:  royalblue;
-    }
+}
 
 img {
     max-width: 300px;
     margin-top: 1em;
+}
+
+h1, h2, h3, p, a {
+    color: white;
+    margin: 0;
+}
+
+h3, .principle p, .principle a {
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+header, footer {
+    background-color: royalblue;
+    text-align: center;
 }
 
 footer, footer a {
@@ -50,6 +50,10 @@ footer {
     padding: 1.5em;
 }
 
+.bottom {
+    color: yellow;
+    font-size: 0.75em;
+}
 
 @media screen and (min-width: 500px){
     .main-grid {
