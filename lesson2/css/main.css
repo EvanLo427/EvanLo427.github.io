@@ -1,9 +1,65 @@
+html {
+    font-family: Georgia, serif;
+    font-size: 14pt;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+header, footer {
+    background-color: royalblue;
+    padding: 0.5em;
+    color: white ;
+    border-radius: 0.5em;
+}
+
+main {
+    padding: 0.5em;
+    margin: 0px 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 50px;
+    text-align: center;
+}
+
+img {
+    float: right;
+    border-radius: 0.1em;
+    box-shadow: 1px 1px 5px 5px rgb(116, 115, 115);
+
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.bottom {
+    color: yellow;
+    font-size: 0.75em;
+}
+
+h2 {
+    border-bottom: solid darkblue 2px;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0.5em;
+}
+
+/********************************************/
+
 body {
-    background-color: white;
+    background-color: var(--color-contrast-lower);
 }
 
 .container {
-    max-width: 64rem;
+    max-width: var(--breakpoint-md);
     margin: 0 auto;
 }
 
