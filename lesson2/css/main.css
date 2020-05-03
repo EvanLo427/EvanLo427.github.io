@@ -91,7 +91,7 @@ body {
     text-align: center;
     border-radius: 15px;
   }
-  
+
     /* unvisited link */
   a:link {
       color: white;
@@ -112,38 +112,32 @@ body {
       color: white;
     }
   
-    @media only screen and (min-width: 32em) {
-        .gridarea {
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-areas:
-            "header  header  header"
-            "main main main"
-            "footer  footer  footer";
-        }
-    
-        header {
-          background-color: royalblue;
-          grid-template-columns: 250px 1fr;
-        }
-    
-        main {
-          grid-template-columns: 1fr 1fr;
-        }
-    
-        h1 {
-          font-size: 2rem;
-        }
-      }
-
-      @media only screen and (min-width: 60em) {
-        main {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    
-        main section:nth-child(3) {
-            grid-column: span 1;
-        }
-        h1 {
-            font-size: 2rem;
-          }
+@media (min-width: 32rem) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid div {
+        margin: var(--space-xs) 0;
+        background-color: var(--color-white);
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 0;
+    }
+}
+
+@media (min-width: 48rem) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid div {
+        margin: var(--space-md) 0;
+        background-color: var(--color-white);
+    }
+}
