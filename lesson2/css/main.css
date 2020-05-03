@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Varela+Round&display=swap');
+
 body {
     margin: 0 auto;
     max-width: 940px;
@@ -28,6 +30,14 @@ img {
 h1, h2, h3, p, a {
     color: white;
     margin: 0;
+}
+
+h3{
+    font-family: 'Varela Round', cursive;
+}
+
+p{
+    font-family: 'Roboto Condensed', cursive;
 }
 
 h3, .principle p, .principle a {
