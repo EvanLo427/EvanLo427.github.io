@@ -10,18 +10,6 @@ header {
     padding: 2em;
 }
 
-.main-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-}
-
-.principle {
-    overflow: hidden;
-    margin: 2em 0em;
-    background-color:  royalblue;
-}
-
 img {
     max-width: 300px;
     margin-top: 1em;
