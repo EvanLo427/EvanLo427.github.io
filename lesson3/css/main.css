@@ -89,13 +89,33 @@ p{
     margin: auto;
     text-align: center;
 }
-.colors th {
+.colors th{
     background-color: #4169e1;
 }
 .colors td{
     width: 25%;
     height: 3em;
 }
+
+.Varela-Round, 
+.Varela-Round th{
+    font-family: 'Varela Round', cursive;
+    width: 100%;
+    min-width: 200px;
+    height: 3em;
+    text-align: center;
+    border: 1px solid black;
+}
+.Roboto-Condensed,
+.Roboto-Condensed th{ 
+    font-family: 'Roboto Condensed', cursive;
+    width: 100%;
+    min-width: 200px;
+    height: 3em;
+    text-align: center;
+    border: 1px solid black;
+  }
+
 
 header, footer {
     color: #ffffff;
