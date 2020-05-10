@@ -37,16 +37,12 @@ body {
 img {
     width: 100%;
     height: auto;
-    border-radius: 40px;
-    box-shadow: 0 0 5px;
 }
 
 #logo{
     width: 50%;
     height: auto;
     text-align: center;
-    box-shadow: 0 0 0;
-    border-radius: 0;
 }
 
 #lgo{
@@ -61,6 +57,7 @@ h1, h2, h3{
 h3{
     color: white;
     background-color: royalblue;
+    font-size: 18px;
     border-top: 5px double;
     border-bottom: 5px double;
     text-align: center;
