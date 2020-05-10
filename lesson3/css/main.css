@@ -55,8 +55,8 @@ h1, h2, h3{
 }
 
 h3{
-    color: white;
-    background-color: royalblue;
+    color: #000000;
+    background-color: #4169e1;
     font-size: 18px;
     border-top: 5px double;
     border-bottom: 5px double;
@@ -68,24 +68,45 @@ p{
     font-size: 18px;
 }
 
+
+:root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #4169e1;
+    --accent1-color: #000000;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+  .colors th {
+    background-color: #999;
+}
+.colors td{
+    width: 25%;
+    height: 3em;
+}
+
 header, footer {
-    color: white;
-    background-color: royalblue;
+    color: #ffffff;
+    background-color: #4169e1;
     text-align: center;
 }
 
 footer, footer a {
-    color: white;
+    color: #ffffff;
     font-size: 18px;
 }
 
 footer {
-    color: white;
+    color: #ffffff;
     padding: 1.5em;
 }
 
 .bottom {
-    color: yellow;
+    color: #ffff00;
     font-size: 0.75em;
 }
 
