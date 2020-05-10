@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Varela+Round&display=swap');
 
+nav {
+    background-color: royalblue;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    padding:1em;
+    min-width: 70px;
+}
+nav a:link, nav a:visited {
+    color: black;
+}
+nav a:hover {
+    color: black;
+    background-color: #ffffff;
+}
+
 body {
     margin: 0 auto;
     max-width: 940px;
