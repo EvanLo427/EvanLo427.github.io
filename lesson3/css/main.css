@@ -80,6 +80,7 @@ p{
     background-color:#00aeff;
 }
 .accent2{
+    color: white;
     background-color:#000000;
 }
 
@@ -90,6 +91,7 @@ p{
     text-align: center;
 }
 .colors th{
+    color: white;
     background-color: #4169e1;
 }
 .colors td{
