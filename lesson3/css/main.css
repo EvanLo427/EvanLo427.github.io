@@ -30,6 +30,7 @@ body {
 }
 
 header {
+    color: white;
     padding: 2em;
 }
 
@@ -66,7 +67,7 @@ header, footer {
 }
 
 footer, footer a {
-    color: black;
+    color: white;
     font-size: 18px;
 }
 
