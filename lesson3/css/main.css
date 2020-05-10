@@ -55,7 +55,7 @@ h1, h2, h3{
 }
 
 h3{
-    color: #000000;
+    color: white;
     background-color: #4169e1;
     font-size: 18px;
     border-top: 5px double;
@@ -69,19 +69,23 @@ p{
 }
 
 
-:root{
-    --primary-color: #FFFFFF;
-    --secondary-color: #4169e1;
-    --accent1-color: #000000;
-}
 
+#primary td{
+    background-color:#FFFFFF;
+}
+#secondary td{
+    background-color:#4169e1;
+}
+#accent1 td{
+    background-color:#000000;
+}
 .colors {
     width: 100%;
     min-width: 350px;
     margin: auto;
     text-align: center;
 }
-  .colors th {
+.colors th {
     background-color: #4169e1;
 }
 .colors td{
