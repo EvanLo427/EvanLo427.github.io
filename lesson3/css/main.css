@@ -6,7 +6,7 @@ header {
 }
 
 nav {
-    background-color: royalblue;
+    background-color: #00aeff;
     text-align: center;
   }
   nav ul {
@@ -77,8 +77,12 @@ p{
     background-color:#4169e1;
 }
 .accent1{
+    background-color:#00aeff;
+}
+.accent2{
     background-color:#000000;
 }
+
 .colors {
     width: 100%;
     min-width: 350px;
