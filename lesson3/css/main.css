@@ -44,6 +44,13 @@ img {
 #logo{
     width: 50%;
     height: auto;
+    text-align: center;
+    box-shadow: 0 0 0;
+    border-radius: 0;
+}
+
+#lgo{
+    text-align: center;
 }
 
 h1, h2, h3{
