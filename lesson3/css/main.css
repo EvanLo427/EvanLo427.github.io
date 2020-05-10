@@ -7,26 +7,26 @@ header {
 
 nav {
     background-color: royalblue;
-    line-height: 3em;
-    text-align: center;   
-    font-size: 1.2em;
-}
-
-nav > ul {
+    text-align: center;
+  }
+  nav ul {
     list-style-type: none;
-    display: flex;
-}
-nav a {
-    padding:1em;
-    min-width: 70px;
-}
-nav a:link, nav a:visited {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav ul li a {
+    display: block;
     color: white;
-}
-nav a:hover {
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  nav a:hover {
+    background-color:white;
     color: black;
-    background-color: white;
-}
+  }
 
 body {
     margin: 0 auto;
@@ -95,12 +95,12 @@ footer {
     body {
         font-size: 16px;
     }
-    nav{
-        display: block;
-    }
 }
 
 @media screen and (min-width: 900px) {
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; }
+
     body {
         font-size: 18px;
     }
