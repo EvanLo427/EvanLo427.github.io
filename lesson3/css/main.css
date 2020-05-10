@@ -70,13 +70,13 @@ p{
 
 
 
-#primary td{
+.primary{
     background-color:#FFFFFF;
 }
-#secondary td{
+.secondary{
     background-color:#4169e1;
 }
-#accent1 td{
+.accent1{
     background-color:#000000;
 }
 .colors {
