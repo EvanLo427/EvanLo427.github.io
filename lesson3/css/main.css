@@ -16,18 +16,18 @@ img {
 }
 
 h1, h2, h3, p, a {
-    color: white;
+    color: black;
     margin: 0;
     text-align: center;
 }
 
 h3{
-    color: white;
+    color: black;
     font-family: 'Varela Round', cursive;
 }
 
 p{
-    color: white;
+    color: black;
     font-family: 'Roboto Condensed', cursive;
 }
 
@@ -43,7 +43,7 @@ header, footer {
 }
 
 footer, footer a {
-    color: white;
+    color: black;
     font-size: 18px;
 }
 
