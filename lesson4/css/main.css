@@ -15,6 +15,11 @@ header img{
     height: auto;
 }
 
+.headings{
+    display: flex;
+    flex-direction: column;
+}
+
 .header-p{
     text-align: center;
     margin-top: 0;
