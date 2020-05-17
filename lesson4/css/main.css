@@ -10,25 +10,28 @@ header {
 nav {
     background-color: #00aeff;
     text-align: center;
-  }
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
-  nav ul li a {
+}
+
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
-  }
-  nav a:hover {
+}
+
+nav a:hover {
     background-color:white;
     color: black;
-  }
+}
 
 body {
     margin: 0 auto;
@@ -70,57 +73,6 @@ p{
     font-size: 18px;
 }
 
-
-
-.primary{
-    background-color:#FFFFFF;
-}
-.secondary{
-    background-color:#4169e1;
-}
-.accent1{
-    background-color:#00aeff;
-}
-.accent2{
-    color: white;
-    background-color:#000000;
-}
-
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: auto;
-    text-align: center;
-}
-.colors th{
-    color: white;
-    background-color: #4169e1;
-}
-.colors td{
-    width: 25%;
-    height: 3em;
-}
-
-.Varela-Round, 
-.Varela-Round th{
-    font-family: 'Varela Round', cursive;
-    width: 100%;
-    min-width: 200px;
-    height: 3em;
-    text-align: center;
-    border: 1px solid black;
-}
-.Roboto-Condensed,
-.Roboto-Condensed th{ 
-    font-family: 'Roboto Condensed', cursive;
-    width: 100%;
-    min-width: 200px;
-    height: 3em;
-    text-align: center;
-    border: 1px solid black;
-  }
-
-
 header, footer {
     color: #ffffff;
     background-color: #4169e1;
@@ -142,91 +94,20 @@ footer {
     font-size: 0.75em;
 }
 
+
 /*tablet viewport*/
 @media only screen and (min-width: 38em) {
-    main {
-      grid-template-columns: 1fr 1fr;
+    body {
+      font-size: 16px;
     }
-    
-    header {
-      max-width: 100%;
-      font-size: 1.25rem;
-      justify-content: center;
-    }
-  
-
-    header img{
-      width: 90%;
-    }
-    
-    section image {
-      max-width: 84%;
-      padding: 0em 1.30em 0em 1.30em;
-    }
-    
-    h1 {
-      font-size: 50px;
-    }
-    
-    nav {
-      width:100%;
-    }
-    
-    .navigation {
-      display: flex;
-    }
-
-    .navigation li {
-      display: block; 
-      flex: 1 1 100%;
-    }
-
-    .navigation li:first-child{
-      display: none;
-    }
-
-    nav ul li { 
-      float:left;
-      flex: 1 1 100%; 
-      padding:0.30em;
-    }
-
-    main, footer{
-      width:75%;
-  }
-
-  }
+}
 
   /*computer viewport*/
 @media only screen and (min-width: 60em) {
-    body{
-        background-color: #F9F8F2;
-    }
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; }
 
-    header {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    nav ul {
-        display:flex;
-    }
-
-    nav li:hover{
-        background-color: #B39C4D;
-        color: black;
-    }
-    
-    nav ul li { 
-        flex: 1 1 100%; 
-        padding:0.50em;
-	}
-    
-    section image {
-        max-width: 84%;
-        padding: 0em 1.30em 0em 1.30em;
+    body {
+        font-size: 18px;
     }
 }
