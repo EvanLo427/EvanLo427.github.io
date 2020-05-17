@@ -188,18 +188,13 @@ footer {
 
 /*tablet viewport*/
 @media only screen and (min-width: 38em) {
-    main {
-      grid-template-columns: 1fr 1fr;
-    }
-    
     header {
-      max-width: 100%;
-      font-size: 1.25rem;
-      justify-content: center;
+        grid-template-columns: 1fr 1fr;
     }
-  
+
     header img{
-      width: 25%;
+        width: 50%;
+        text-align: right;
     }
     
     section image {
