@@ -43,6 +43,19 @@ section p{
 
 }
 
+main {
+    margin: auto;
+    display: block;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+    grid-gap: 0.8em;
+    padding: 0.8em;
+}
+
+main.div {
+    column-count: 3;
+}
+
 nav {
     background-color: #00aeff;
     text-align: center;
@@ -221,6 +234,12 @@ footer {
     header img{
         width: 25%;
     }
+
+    section image {
+        max-width: 84%;
+        padding: 0em 1.30em 0em 1.30em;
+    }
+
     body {
         font-size: 18px;
     }
