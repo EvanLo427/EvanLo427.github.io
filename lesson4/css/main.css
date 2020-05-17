@@ -202,6 +202,10 @@ footer {
         padding:0.50em;
     }
     
+    main, footer{
+        width:100%;
+    }
+
     body {
         font-size: 18px;
     }
