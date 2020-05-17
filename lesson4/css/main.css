@@ -7,6 +7,18 @@ header {
     padding: 2em;
 }
 
+header img{
+    width: 50%;
+    height: auto;
+}
+
+#header-p{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 nav {
     background-color: #00aeff;
     text-align: center;
@@ -33,15 +45,32 @@ nav a:hover {
     color: black;
 }
 
+nav button{
+    font-size: 1.6rem;
+    color:white;
+}
+
+.navigation{
+    list-style:none;
+    padding:0;
+}
+
+.navigation li:first-child{
+    display: block;
+}
+
+.navigation li{
+    display: none;
+}
+
+.responsive li{
+    display: block;
+}
+
 body {
     margin: 0 auto;
     max-width: 940px;
     font-size: 14px;
-}
-
-img {
-    width: 100%;
-    height: auto;
 }
 
 #logo{
