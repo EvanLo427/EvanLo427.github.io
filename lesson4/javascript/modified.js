@@ -8,7 +8,5 @@ let year = d.getFullYear();
 
 
 let fullDate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
-
 document.getElementById("currentDate").innerHTML = fullDate;
-
 document.getElementById("year").textContent = year;
