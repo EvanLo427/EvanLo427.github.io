@@ -143,9 +143,15 @@ footer {
 
   /*computer viewport*/
 @media only screen and (min-width: 60em) {
-    nav ul { display: flex; }
-    nav ul li { flex: 1 1 100%; }
+    nav ul {
+        display:flex;
+    }
 
+    nav ul li { 
+        flex: 1 1 100%; 
+        padding:0.50em;
+    }
+    
     body {
         font-size: 18px;
     }
