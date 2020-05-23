@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Weather Site Plan for lesson 3">
+    <title>Preston Town Page | Lesson 4</title>
+    <!--link files for website icon-->
+    <link rel="Shortcut Icon" type="image/x-icon" href="images/icon.png">
+    <!--link files in css folder-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/icon.png" alt="weather website logo">
+        </picture>
+        <section class="headings">
+        <h1>Good Weather for everyone</h1>
+        <div class="header-p">Local news and weather predictions at the ready.</div>
+        <h2>Evan Lo</h2>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav> 
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="contentbox">Hero w/ Weather Summary</div>
+        <div class="contentbox forecast">5 day forecast</div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
+    </main>
+    <br>
+    <footer>
+        <p> &copy; <span id="currentdate"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="bottom">Last updated on <span id="dateandtime"></span></p>
+    </footer>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/modified.js"></script>
+    <script src="javascript/toggleMenu.js"></script>
+</body>
+</html>
