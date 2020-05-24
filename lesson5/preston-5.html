@@ -46,20 +46,37 @@
 
       <main>
         <h2>Preston Idaho</h2>
-        <div class="hero">
-            <div>
-              <img src="images/town.jpg" alt="Photo of Preston Idaho">
-            </div>
-            <section class="weathersummary">
-              <h3>Weather Summary</h3>
-              <p><b>Currently: Sunny</b></p>
-              <p><b>High: 76 &#8457; </b></p>
-              <p><b>Wind Chill: &#8457; </b></p>
-              <p><b>Humidity: 20% </b></p>
-              <p><b>Wind Speed: 15 mph </b></p>
-            </section>
+        <h2>Preston Idaho</h2>
+        <div id="hero">
+          <div id="hero-content">
+            <h3>Weather Summary</h3>
+            <hr />
+            <table>
+              <tr>
+                <td class="align-right">Currently:</td>
+                <td>Sunny</td>
+              </tr>
+              <tr>
+                <td class="align-right">High:</td>
+                <td>76&#176; F</td>
+              </tr>
+              <tr>
+                <td class="align-right">Wind Chill:</td>
+                <td>F&#176;</td>
+              </tr>
+              <tr>
+                <td class="align-right">Humidity:</td>
+                <td>69%</td>
+              </tr>
+              <tr>
+                <td class="align-right">Wind Speed:</td>
+                <td>5 mph</td>
+              </tr>
+            </table>
+          </div>
+          <img id="hero-image" src="images/town.jpg" alt="Banner Image" />
         </div>
-        <br><br>
+        <br><br><br><br>
         <div class="forecast">
             <h3>5 Day Weather Forecast</h3>
             <div class="week">
@@ -114,7 +131,7 @@
         </article>
 
         <div class="contactinfo">
-            <img class="map" src="images/prestonmap.PNG" alt="Preston Idaho on map">
+            <img class="map" src="images/maps.png" alt="Preston Idaho on map">
             <div class="contactmethods">
               <p>
                 <b>Good Weather for everyone</b><br>
@@ -131,7 +148,6 @@
         </div>
 
     </main>
-    <br>
     <footer>
         <p> &copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
         <p class="currentDate">Last updated on <span id="currentDate"></span></p>

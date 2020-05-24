@@ -12,7 +12,7 @@ body {
 /*phone view*/
 #banner{
     color: white;
-    background:radial-gradient(white , #4169e1 , #4169e1);
+    background:radial-gradient(white , #00aeff , #4169e1);
     text-align: center;
     font-size: 1em;
 	margin: 0;
@@ -108,24 +108,31 @@ h2 {
     text-align: center;
 }
 
-.hero{
-    position: relative;
+#hero {
+    margin-bottom: 20%;
 }
 
-.hero img {
-    max-width: 90%;
+/* undo for desktop */
+
+#hero-image {
+    height: 100%;
+    min-height: 130px;
+    width: 100%;
 }
-.weathersummary{
+
+#hero-content {
+    background-color: #485696cc;
     position: absolute;
-    top: 10px;
-    left: 30px;
-    background: radial-gradient(white,#4169e1);
-    border: 1px solid black;
-    padding: 1.5rem;
-	box-shadow: 0 0 30px black;
-    opacity: .8;
-    line-height: 0.40rem;
+    margin: 5%;
+    padding: 2% 3%;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#hero-content h3 {
+    margin: 0;
+}
+
 
 #copyright {
     color: white;
