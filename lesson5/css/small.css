@@ -53,6 +53,12 @@ header img {
     margin-left: auto;
 }
 
+#h1p{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 h1, h2, h3{
     font-family: 'Varela Round', cursive;
 }
