@@ -1,99 +1,129 @@
-@media (min-width: 601px) and (max-width: 1000px) {
-
-    #banner {
-        height: 60px;
+/*tablet viewport*/
+@media only screen and (min-width: 38em) {
+    #banner{
+      font-size: 1.50em;
+      padding: 0.75em;
     }
-
+    
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+    
     header {
-        grid-template-columns: 1fr 1fr;
-        text-align: left;
+      max-width: 100%;
+    }
+  
+    header{
+      font-size: 1.25rem;
     }
 
-    header img {
-        text-align: right;
+    header img{
+      width: 90%;
+    }
+    
+    section image {
+      max-width: 84%;
+      padding: 0em 1.30em 0em 1.30em;
+    }
+    
+    h1 {
+      font-size: 50px;
+    }
+    
+    nav {
+      width:100%;
+    }
+    
+    .navigation {
+      display: flex;
+    }
+
+    .navigation li {
+      display: block; 
+      flex: 1 1 100%;
+    }
+
+    .navigation li:first-child{
+      display: none;
+    }
+
+    nav ul li { 
+      float:left;
+      flex: 1 1 100%; 
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    main, footer{
+      width:75%;
+    }
+
+    .active{
+      background-color: #B39C4D;
+    }
+
+    .hero img{
+      max-width:75%;
+    }
+    .weathersummary{
+      top: 30px;
+      left: 150px;
 
     }
 
-    nav ul {
-        display: flex;
+    .forecast{
+      display: block;
     }
 
-    nav li {
-        width: 100%;
+    .week{
+      display: flex;
+      flex-direction: row;
+      font-size: 1.5em;
+      font-weight: 800;
     }
 
-    nav .nav-item {
-        display: block;
-        min-width: 80px;
+    .week div:last-child {
+      border-right: 1px solid black;
     }
 
-    nav #menu-toggle {
-        display: none;
+    .weekdays{
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+		  flex: 0.5 1 100%;
     }
 
-    #hero {
-        margin-bottom: 4%;
+    .day{
+      display: block;
+      border-bottom: 1px solid black;
+      background-color: #1E2F23;
+      color: white;
+      padding: .5em;
+      font-size: 1em;
+      font-weight: 500;
     }
 
-    #hero-image {
-        height: 100%;
-        min-height: 130px;
-        max-height: 200px;
-        width: 100%;
-        object-fit: cover;
+    .temperature{
+      color: #1E2F23;
+      font-size: 1.50em;
+      font-weight: 500;
     }
 
-    section {
-        display: block;
+    article img{
+      float: right;
+      max-width: 20%;
+      margin: 1.5em;
     }
 
-    section table {
-        width: 80%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .map{
+      display: flex;
+      max-width: 25%;
+      float: left;
+      margin-right: 2em;
     }
 
-
-    article {
-        padding: 2%;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-
-    article img {
-        order: 2;
-        width: 100%;
-        height: 100%;
-        margin: auto 0;
-        object-fit: cover;
-    }
-
-    .map {
-        padding-top: 2%;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .map img {
-        height: 150px;
-        width: 235.5px;
-        order: 1;
-    }
-
-    .map h5 {
-        margin: .5em 0;
-    }
-
-
-    .contact h3 {
-        text-align: left;
-    }
-
-    .contact ul {
-        padding-left: 0;
-    }
-
-    .contact {
-        margin: 1em 0;
-        order: 2;
-    }
 }
