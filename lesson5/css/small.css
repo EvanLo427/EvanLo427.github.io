@@ -255,6 +255,12 @@ article {
     display: flex;
     justify-content: center;
     text-align: left;
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    padding: 1em;
 }
 
 .contactmethods{
@@ -264,7 +270,6 @@ article {
 .contactmethods img{
     max-width: 31px;
 }
-
 footer a:hover {
     background-color: #4169e1;
     color: white;
