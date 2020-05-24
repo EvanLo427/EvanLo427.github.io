@@ -13,51 +13,16 @@ function toggleMenu() {
     }
   }
   
-  let _currentDate = document.getElementById('current-date');
-  let _currentYear = document.getElementById('current-year');
-  
-  now = new Date();
-  
-  let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  
-  let months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-  
-  let dayOfWeek = days[now.getDay()];
-  let month = months[now.getMonth()];
-  let day = now.getFullYear();
-  let year = now.getFullYear();
-  
-  _currentDate.innerHTML = `${dayOfWeek}, ${day} ${month} ${year}`;
-  _currentYear.innerHTML = now.getFullYear();
-  
-  let nav = 'preston';
-  
-  function changeNav(navID) {
-    document.getElementById(navID).classList.add('highlight');
-    if (nav !== navID) {
-      document.getElementById(nav).classList.remove('highlight');
-      nav = navID;
-    }
-  }
-  
-  changeNav('preston');
-  
-  let d = new Date();
-  
-  if (d.getDay() == 5) {
-    document.getElementById('banner').classList.add('show-banner');
-  }
-  
+  let dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+let d = new Date();
+let dayName = dayNames[d.getDay()];
+let monthName = months[d.getMonth()];
+let year = d.getFullYear();
+
+let fullDate = dayName + ", " + monthName + " " + d.getDate() + ", " + year;
+
+document.getElementById("currentDate").innerHTML = fullDate;
+
+document.getElementById("year").textContent = year;
