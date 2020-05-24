@@ -121,12 +121,10 @@
       max-width: 20%;
       margin: 1.5em;
     }
-
     .map{
-      display: flex;
-      max-width: 25%;
-      float: left;
-      margin-right: 2em;
-    }
-
+        display: flex;
+        max-width: 25%;
+        float: left;
+        margin-right: 2em;
+      }
 }

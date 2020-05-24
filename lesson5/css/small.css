@@ -249,7 +249,7 @@ article {
 }
 
 .contactinfo{
-    background-color: #4169e1;
+    background-color: 00aeff;
     color: white;
     padding: 2em;
     display: flex;
@@ -264,6 +264,7 @@ article {
 .contactmethods img{
     max-width: 31px;
 }
+
 
 footer a:hover {
     background-color: #4169e1;
