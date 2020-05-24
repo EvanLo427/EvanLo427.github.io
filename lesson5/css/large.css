@@ -5,7 +5,13 @@
     }
 
     header {
-        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    header img {
+        text-align: right;
+
     }
 
     h1 {
