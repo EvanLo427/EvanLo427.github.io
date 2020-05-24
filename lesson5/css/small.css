@@ -116,8 +116,14 @@ h4 {
     padding-left: 1.30em;
 }
 
+.main h2 {
+    color:black ;
+    padding: 2px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 h2 {
-    color:white ;
     padding: 2px;
     margin: 0 auto;
     text-align: center;
