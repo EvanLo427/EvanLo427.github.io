@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The Weather Site Plan for lesson 3">
-    <title>Preston Town Page | Lesson 4</title>
-    <!--link files for website icon-->
-    <link rel="Shortcut Icon" type="image/x-icon" href="images/icon.png">
+    <title>Preston Town Page | Lesson 5</title>
+    <meta name="description" content="Preston Town Page for lesson 5">
+    <!--link to favicon-->
+    <link rel="Shortcut Icon" href="images/icon.png">
     <!--link files in css folder-->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
@@ -39,10 +41,91 @@
 
     <main>
         <h2>Preston Idaho</h2>
-        <div class="contentbox">Hero w/ Weather Summary</div>
-        <div class="contentbox forecast">5 day forecast</div>
-        <div class="contentbox">Article</div>
-        <div class="contentbox">Contact Information</div>
+        <div class="hero">
+            <div>
+              <img src="images/idahopic.jpg" alt="Photo of Preston Idaho">
+            </div>
+            <section class="weathersummary">
+              <h3>Weather Summary</h3>
+              <p><b>Currently: Sunny</b></p>
+              <p><b>High: 76 &#8457; </b></p>
+              <p><b>Wind Chill: &#8457; </b></p>
+              <p><b>Humidity: 20% </b></p>
+              <p><b>Wind Speed: 15 mph </b></p>
+            </section>
+        </div>
+        <br><br>
+        <div class="forecast">
+            <h3>5 Day Weather Forecast</h3>
+            <div class="week">
+                <div class="weekdays">
+                    <span class="day">Wed</span>
+                    <img src="images/forecasticon.png" alt="Mostly Sunny">
+                    <span class="temperature">76&#8457;</span>
+                </div>
+                <div class="weekdays">
+                    <span class="day">Thur</span>
+                    <img src="images/forecasticon.png" alt="Mostly Sunny">
+                    <span class="temperature">70&#8457;</span>
+                </div>
+                <div class="weekdays">
+                    <span class="day">Fri</span>
+                    <img src="images/forecasticon.png" alt="Mostly Sunny">
+                    <span class="temperature">74&#8457;</span>
+                </div>
+                <div class="weekdays">
+                    <span class="day">Sat</span>
+                    <img src="images/forecasticon.png" alt="Mostly Sunny">
+                    <span class="temperature">70&#8457;</span>
+                </div>
+                <div class="weekdays">
+                    <span class="day">Sun</span>
+                    <img src="images/forecasticon.png" alt="Mostly Sunny">
+                    <span class="temperature">72&#8457;</span>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <img src="images/picnic.jpg" alt="picnic at Foundation Park">
+            <h3>Founders Day Fresco</h3>
+            <h4>by Janica Juarez</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum 
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                mollit anim id est laborum
+                <a href="#">read full article</a>
+            </p>
+        </article>
+
+        <div class="contactinfo">
+            <img class="map" src="images/prestonmap.PNG" alt="Preston Idaho on map">
+            <div class="contactmethods">
+              <p>
+                <b>Good Weather for everyone</b><br>
+                &#x1F4CD; 30 N 1st E<br>
+                Preston, ID 83263<br><br>
+                &#128222; 999.999.9999<br>
+                &#x2709; weatherpredictions@wp.com<br><br>
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/pinterest.png" alt="pinterest">
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/whatsapp.png" alt="whatsapp">
+              </p>
+            </div>
+        </div>
+
     </main>
     <br>
     <footer>
