@@ -1,3 +1,4 @@
+//modifieddate
 let dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -15,11 +16,12 @@ document.getElementById("year").textContent = year;
 const hambutton= document.querySelector(".ham");
 hambutton.addEventListener("click", toggleMenu, false);
 
-
+//Toggle Menu
 function toggleMenu() {
     document.querySelector(".navigation").classList.toggle("responsive");
 }
 
+//Show Banner
 let today = new Date();
 let day= today.getDay();
 var disp = day;
