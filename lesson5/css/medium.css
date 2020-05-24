@@ -63,7 +63,7 @@
     }
 
     .active{
-      background-color: #B39C4D;
+      background-color: #4169e1;
     }
 
     .hero img{
@@ -100,7 +100,7 @@
     .day{
       display: block;
       border-bottom: 1px solid black;
-      background-color: #1E2F23;
+      background-color: #4169e1;
       color: white;
       padding: .5em;
       font-size: 1em;
@@ -108,7 +108,7 @@
     }
 
     .temperature{
-      color: #1E2F23;
+      color: #4169e1;
       font-size: 1.50em;
       font-weight: 500;
     }

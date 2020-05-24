@@ -1,7 +1,7 @@
 /*computer viewport*/
 @media only screen and (min-width: 60em) {
     body{
-        background-color: #F9F8F2;
+        background-color: white;
     }
 
     header {
@@ -17,8 +17,8 @@
     }
 
     nav li:hover{
-        background-color: #B39C4D;
-        color: black;
+        background-color: #4169e1;
+        color: white;
     }
     
     nav ul li { 
