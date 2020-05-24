@@ -268,16 +268,12 @@ article img {
 .contactinfo{
     background-color: #00aeff;
     color: white;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     justify-content: center;
-    text-align: left;
-    max-width: 75%;
     margin: 0 auto;
     text-align: center;
-    font-weight: bold;
     align-content: center;
-    padding: 1em;
 }
 
 .contactmethods{

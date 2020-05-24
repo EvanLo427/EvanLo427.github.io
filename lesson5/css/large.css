@@ -48,6 +48,10 @@
         object-fit: cover;
     }
 
+    .contactinfo{
+        width: 75%;
+    }
+    
     article {
         margin: 0 auto;
         padding: 2% 4%;
