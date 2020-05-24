@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Preston Town Page | Lesson 5</title>
+    <title>Good Weather for everyone</title>
     <meta name="description" content="Preston Town Page for lesson 5">
     <!--link to favicon-->
     <link rel="Shortcut Icon" href="images/icon.png">
@@ -16,121 +16,147 @@
 </head>
 
 <body>
+    <div class="container">
+    <aside id="banner">
+         <p>
+            Saturday = Preston Pancake in the Park! <br />9:00 a.m. Saturday at the city park.
+        </p>
+    </aside>
+
     <header>
-        <picture>
-            <img src="images/icon.png" alt="weather website logo">
-        </picture>
-        <section class="headings">
+        <img src="images/icon.png" alt="weather website logo" />
+    <div>
         <h1>Good Weather for everyone</h1>
-        <div class="header-p">Local news and weather predictions at the ready.</div>
+    <small>Local news and weather predictions at the ready.</small>
         <h2>Evan Lo</h2>
-        </section>
+    </div>
     </header>
 
     <nav>
-        <ul class="navigation">
-            <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" class="active">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+        <ul id="menu-list">
+          <li id="menu-toggle" onclick="toggleMenu()">&#9776; Menu</li>
+          <li id="home" class="nav-item" onclick="changeNav('home')"><a href="#">Home</a></li>
+          <li id="preston" class="nav-item" onclick="changeNav('preston')">
+            <a href="#">Preston</a>
+          </li>
+          <li id="soda" class="nav-item" onclick="changeNav('soda')">
+            <a href="#">Soda Springs</a>
+          </li>
+          <li id="fish" class="nav-item" onclick="changeNav('fish')">
+            <a href="#">Fish Haven</a>
+          </li>
+          <li id="storm" class="nav-item" onclick="changeNav('storm')">
+            <a href="#">Storm Center</a>
+          </li>
+          <li id="gallery" class="nav-item" onclick="changeNav('gallery')">
+            <a href="#">Gallery</a>
+          </li>
         </ul>
-    </nav> 
+      </nav>
 
     <main>
-        <h2>Preston Idaho</h2>
-        <div class="hero">
-            <div>
-              <img src="images/idahopic.jpg" alt="Photo of Preston Idaho">
+        <main>
+            <h2>Preston Idaho</h2>
+            <div id="hero">
+              <div id="hero-content">
+                <h3>Weather Summary</h3>
+                <hr />
+                <table>
+                  <tr>
+                    <td class="align-right">Currently:</td>
+                    <td>Sunny</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">High:</td>
+                    <td>76&#176; F</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">Wind Chill:</td>
+                    <td>F&#176;</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">Humidity:</td>
+                    <td>69%</td>
+                  </tr>
+                  <tr>
+                    <td class="align-right">Wind Speed:</td>
+                    <td>5 mph</td>
+                  </tr>
+                </table>
+              </div>
+              <img id="hero-image" src="images/town.jpg" alt="Banner Image" />
             </div>
-            <section class="weathersummary">
-              <h3>Weather Summary</h3>
-              <p><b>Currently: Sunny</b></p>
-              <p><b>High: 76 &#8457; </b></p>
-              <p><b>Wind Chill: &#8457; </b></p>
-              <p><b>Humidity: 20% </b></p>
-              <p><b>Wind Speed: 15 mph </b></p>
+            <section>
+              <h4>5 Day Forcast</h4>
+              <table>
+                <tr class="table-headrow">
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/sun.png" alt="Sun Icon" />
+                    76&#176;
+                  </td>
+                  <td>
+                    <img src="images/sun.png" alt="Sun Icon" />
+                    78&#176;
+                  </td>
+                  <td>
+                    <img src="images/sun.png" alt="Sun Icon" />
+                    86&#176;
+                  </td>
+                  <td>
+                    <img src="images/sun.png" alt="Sun Icon" />
+                    82&#176;
+                  </td>
+                  <td>
+                    <img src="images/sun.png" alt="Sun Icon" />
+                    81&#176;
+                  </td>
+                </tr>
+              </table>
             </section>
-        </div>
-        <br><br>
-        <div class="forecast">
-            <h3>5 Day Weather Forecast</h3>
-            <div class="week">
-                <div class="weekdays">
-                    <span class="day">Wed</span>
-                    <img src="images/forecasticon.png" alt="Mostly Sunny">
-                    <span class="temperature">76&#8457;</span>
-                </div>
-                <div class="weekdays">
-                    <span class="day">Thur</span>
-                    <img src="images/forecasticon.png" alt="Mostly Sunny">
-                    <span class="temperature">70&#8457;</span>
-                </div>
-                <div class="weekdays">
-                    <span class="day">Fri</span>
-                    <img src="images/forecasticon.png" alt="Mostly Sunny">
-                    <span class="temperature">74&#8457;</span>
-                </div>
-                <div class="weekdays">
-                    <span class="day">Sat</span>
-                    <img src="images/forecasticon.png" alt="Mostly Sunny">
-                    <span class="temperature">70&#8457;</span>
-                </div>
-                <div class="weekdays">
-                    <span class="day">Sun</span>
-                    <img src="images/forecasticon.png" alt="Mostly Sunny">
-                    <span class="temperature">72&#8457;</span>
-                </div>
+            <article>
+              <img src="images/celebrate.jpg" alt="Article Image" />
+              <div class="article-content">
+                <h3>Founders Day Fresco</h3>
+                <small>by Janica Juarez</small>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </article>
+          </main>
+          <div class="map">
+            <div class="contact">
+              <h3>EyeNado</h3>
+              <ul>
+                <li>
+                  <p>
+                    1200 Park Ave,<br />
+                    Emeryville, CA 94608
+                  </p>
+                </li>
+                <li>&#9742; 999.999.9999</li>
+                <li>&#9993; help@eyenado.com</li>
+              </ul>
             </div>
-        </div>
-
-        <article>
-            <img src="images/picnic.jpg" alt="picnic at Foundation Park">
-            <h3>Founders Day Fresco</h3>
-            <h4>by Janica Juarez</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum 
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                mollit anim id est laborum
-                <a href="#">read full article</a>
-            </p>
-        </article>
-
-        <div class="contactinfo">
-            <img class="map" src="images/prestonmap.PNG" alt="Preston Idaho on map">
-            <div class="contactmethods">
-              <p>
-                <b>Good Weather for everyone</b><br>
-                &#x1F4CD; 30 N 1st E<br>
-                Preston, ID 83263<br><br>
-                &#128222; 999.999.9999<br>
-                &#x2709; weatherpredictions@wp.com<br><br>
-                <img src="images/facebook.png" alt="facebook">
-                <img src="images/pinterest.png" alt="pinterest">
-                <img src="images/twitter.png" alt="twitter">
-                <img src="images/whatsapp.png" alt="whatsapp">
-              </p>
-            </div>
-        </div>
-
+            <img src="images/map.jpg" alt="Map Image" />
+          </div>
     </main>
     <br>
     <footer>
-        <p> &copy; <span id="currentdate"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-        <p class="bottom">Last updated on <span id="dateandtime"></span></p>
+        <p> &copy; <span id="current-year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="date-updated">Last updated on <span id="current-date"></span></p>
     </footer>
     <script src="javascript/script.js"></script>
 </body>

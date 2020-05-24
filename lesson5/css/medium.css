@@ -1,0 +1,99 @@
+@media (min-width: 601px) and (max-width: 1000px) {
+
+    #banner {
+        height: 60px;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    header img {
+        text-align: right;
+
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav .nav-item {
+        display: block;
+        min-width: 80px;
+    }
+
+    nav #menu-toggle {
+        display: none;
+    }
+
+    #hero {
+        margin-bottom: 4%;
+    }
+
+    #hero-image {
+        height: 100%;
+        min-height: 130px;
+        max-height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section {
+        display: block;
+    }
+
+    section table {
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    article {
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+
+    article img {
+        order: 2;
+        width: 100%;
+        height: 100%;
+        margin: auto 0;
+        object-fit: cover;
+    }
+
+    .map {
+        padding-top: 2%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map img {
+        height: 150px;
+        width: 235.5px;
+        order: 1;
+    }
+
+    .map h5 {
+        margin: .5em 0;
+    }
+
+
+    .contact h3 {
+        text-align: left;
+    }
+
+    .contact ul {
+        padding-left: 0;
+    }
+
+    .contact {
+        margin: 1em 0;
+        order: 2;
+    }
+}

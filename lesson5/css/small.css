@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:wght@300;400&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+   font-family: 'Ubuntu', sans-serif; */
+
+/* https://coolors.co/000000-ffffff-485696-628b48-3a6ea5 */
+
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+}
+
+.highlight {
+    border-radius: 3px 3px 0 0;
+    background-color: #ffffff99;
+    color: #485696;
+}
+
+#banner {
+    background: rgb(58, 110, 165);
+    background: linear-gradient(0deg, rgba(98, 139, 72, 0.6) 0%, rgba(98, 139, 72, 1) 100%);
+    text-align: center;
+    color: white;
+    height: 80px;
+    display: none;
+}
+
+.show-banner {
+    display: block !important;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.active-menu {
+    margin-bottom: 6%;
+}
+
+header {
+    color: white;
+    background-color: #3a6ea5;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    text-align: left;
+    padding: 20px;
+}
+
+header img {
+    text-align: right;
+    height: 66.78px;
+    width: 66.78px;
+}
+
+header h1 {
+    margin: 0.2em 0;
+}
+
+header img {
+    max-height: 100%;
+    margin-right: 1vw;
+    margin-left: auto;
+}
+
+nav {
+    color: white;
+    background-color: #485696;
+    text-align: center;
+}
+
+nav .nav-item {
+    display: none;
+    padding-bottom: 1vh;
+}
+
+nav .nav-item:hover {
+    background-color: #628b48;
+    color: white;
+    border-radius: 3px 3px 0 0;
+}
+
+nav .show-menu .nav-item {
+    display: block;
+}
+
+nav ul {
+    padding: 1vh 1vw 0 1vh;
+    margin: 0 2vw;
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+nav li {
+    width: 50%;
+    padding: 1vh 1vw;
+    margin: 0 auto;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+main {
+    margin: 0 4vw 5vh 4vw;
+}
+
+main h2,
+main h3,
+main h4 {
+    text-align: center;
+}
+
+#hero {
+    margin-bottom: 20%;
+}
+
+/* undo for desktop */
+
+#hero-image {
+    height: 100%;
+    min-height: 130px;
+    width: 100%;
+}
+
+#hero-content {
+    background-color: #485696cc;
+    position: absolute;
+    margin: 5%;
+    padding: 2% 3%;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hero-content h3 {
+    margin: 0;
+}
+
+section {
+    display: none;
+}
+
+section table {
+    margin: 2vh auto;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 65%;
+    border-spacing: 0;
+}
+
+section img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.table-headrow {
+    background-color: #628b48;
+}
+
+section th,
+section td {
+    padding: 1vh 0;
+}
+
+section td {
+    text-align: center;
+}
+
+article {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #628b4899;
+    padding: 5%;
+    /* border-radius: 5px; */
+}
+
+.article-content {
+    text-align: center;
+}
+
+.article-content h3 {
+    margin-bottom: 0;
+}
+
+.article-content p {
+    text-align: left !important;
+}
+
+article img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.map {
+    background-color: #3a6ea5e6;
+    color: white;
+    margin: 5vh 0 0 0;
+    padding: 0 8vw 2vh 8vw;
+    text-align: center;
+    display: grid;
+}
+
+.map h5 {
+    margin-bottom: 0.5em;
+}
+
+.map img {
+    height: 150px;
+    width: 235.5px;
+    margin: auto auto;
+}
+
+.contact {
+    text-align: left;
+    margin: 1em auto;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #485696;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: auto;
+}
+
+footer a {
+    color: white !important;
+}
