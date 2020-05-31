@@ -44,8 +44,11 @@
     .contactinfo{
         width: 75%;
     }
-    
+
     .article img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 425px;
     }
 }
