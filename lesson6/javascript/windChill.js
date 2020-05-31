@@ -1,18 +1,17 @@
-let temp = parseFloat(document.getElementById('temp').textContent);
-let windSpeed = parseFloat(document.getElementById('windSpeed').textContent);
 
-let windChill = windChillCalc(temp, windSpeed);
-
-document.getElementById('windChillOutput').textContent = windChill;
-
-
-function windChillCalc(temp, windSpeed) {
-
-    if (temp <= 50 && windSpeed >= 3) {
-        let chillCalc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(windSpeed, .16) + .4275 * temp * Math.pow(windSpeed, .16);
-        return Math.round(chillCalc * 10) / 10;
-    } else {
-        return 'N/A';
-    }
-
+let windSpeed = 11;
+let air = 40;
+let windChill;
+if (air <= 50 && air > 3) {
+    windChill = 35.74 + .6215 * air - 35.75 * Math.pow(windSpeed, .16) + .4275 * air * Math.pow(windSpeed, .16);
+    windChill = Math.round(windChill);
+    windChill += "°F";
 }
+else {
+    windChill = "N/A";
+}
+
+
+document.getElementById('windspeedspan').innerHTML = windSpeed;
+document.getElementById('airspan').innerHTML = air;
+document.getElementById('windchillspan').innerHTML = windChill;

@@ -57,24 +57,13 @@
                 <!--lg-->
                 <img src="images/hero-lg.jpg" alt="Hero image large">
             </picture>
-        <div class="summary">
-        <h3>Weather Summary</h3>
-            <hr>
-            <div class="grid">
-                <div class="col-left">
-                    <p>Current:</p>
-                    <p>High:</p>
-                    <p>Low:</p>
-                    <p>Wind:</p>
-                    <p>Wind Chill:</p>
-                </div>
-                <div class="col-right">
-                    <p>Sunny</p>
-                    <p><span id="temp">30</span> &deg;F</p>
-                    <p>15 &deg;F</p>
-                    <p><span id="windSpeed">5</span> NW</p>
-                    <p id="windChillOutput"></p>
-                </div>
+            <div id="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: <span id="airspan"></span>°F</p>
+                <p>Wind Chill: <span id="windchillspan"></span></p> 
+                <p>Humidity: 43%</p>
+                <p>Wind: <span id="windspeedspan"></span> mph</p>
             </div>
         </section>
         <br><br>
@@ -155,7 +144,15 @@
         <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
         <p class="modified">Last updated on <span id="currentDate"></span></p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="javascript/script.js"></script>
     <script src="javascript/windChill.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+    </script>
 </body>
 </html>
