@@ -138,7 +138,9 @@ h2 {
     height: 100%;
     min-height: 130px;
     width: 100%;
-    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
   #weathersummary {
