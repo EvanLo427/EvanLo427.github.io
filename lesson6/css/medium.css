@@ -64,28 +64,6 @@
       background-color: #4169e1;
     }
 
- /* Hero weather summary */
-.hero {
-  position: relative;
-}
-
-#weathersummary {
-  position: absolute;
-  top: 10px;
-  left: 40px;
-  max-width: 70%;
-  background-color: white;
-  padding-right: .7em;
-  border: 1px solid;
-  box-shadow: 0px 3px 19px -3px rgba(0,0,0,0.71);
-  border-radius: 10px;
-}
-#weathersummary p, #weathersummary h3 {
-  margin: .3em;
-  font-size: 1.4em;
-}
-
-
     .forecast{
       display: block;
     }
