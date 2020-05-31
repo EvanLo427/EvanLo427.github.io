@@ -37,15 +37,8 @@
     }
 
 
-    #hero {
-        margin-bottom: 2%;
-    }
-
-    #hero-image {
-        height: 100%;
-        max-height: 300px;
-        width: 100%;
-        object-fit: cover;
+    #weathersummary {
+        top: 32px;
     }
 
     .contactinfo{

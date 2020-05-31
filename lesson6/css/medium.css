@@ -64,6 +64,15 @@
       background-color: #4169e1;
     }
 
+    #weathersummary {
+
+      max-width: 250px;
+  }
+  #weathersummary p, #weathersummary h3{
+      margin: 1em;
+      font-size: larger;
+  }
+  
     .forecast{
       display: block;
     }
