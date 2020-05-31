@@ -15,12 +15,11 @@ function toggleMenu() {
 }
 
 //Show Banner
-let today = new Date();
-let day= today.getDay();
-var disp = day;
+let d = new Date();
+let dayOfWeek = d.getDay();
 
-if (day == 5) {
-    
+if (dayOfWeek == 5) {
+    document.getElementById("notice").style.display = 'block';
+} else {
+    document.getElementById("notice").style.display = 'none';
 }
-
-document.getElementById("banner").style.display = disp;
