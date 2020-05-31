@@ -99,9 +99,15 @@
             </div>
         </div>
         <br><br>
-        <article>
-            <img src="images/running.jpg" alt="picnic at Foundation Park">
-            <div class="article-content">
+        <section class="article">
+            <picture>
+                <!--sm-->
+                <source srcset="images/running-sm.jpg" media="(max-width: 48rem)">
+                <!--md-->
+                <source srcset="images/running-md.jpg" media="(max-width: 64rem)">
+                <!--lg-->
+                <img src="images/running-lg.jpg" alt="picnic at Foundation Park">
+            </picture>
             <h3>Founders Day Fresco</h3>
             <h4>by Janica Juarez</h4>
             <p>
@@ -120,8 +126,7 @@
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                 mollit anim id est laborum
             </p>
-        </div>
-        </article>
+        </section>
     </main>
     
     <div class="contactinfo">
