@@ -1,0 +1,57 @@
+/*computer viewport*/
+@media only screen and (min-width: 60em) {
+    body{
+        background-color: white;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    header img {
+        text-align: right;
+
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    nav ul {
+        display:flex;
+    }
+
+    nav li:hover{
+        background-color: #4169e1;
+        color: white;
+    }
+    
+    nav ul li { 
+		flex: 1 1 100%; 
+	}
+    
+    section image {
+        max-width: 84%;
+        padding: 0em 1.30em 0em 1.30em;
+    }
+
+
+    #weathersummary {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        top: 32px;
+    }
+
+    .contactinfo{
+        width: 75%;
+    }
+
+    .article img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 425px;
+    }
+}
