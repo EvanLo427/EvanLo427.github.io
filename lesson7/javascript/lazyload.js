@@ -6,3 +6,6 @@ const loadImages = (image) => {
   };
 };
 
+imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
