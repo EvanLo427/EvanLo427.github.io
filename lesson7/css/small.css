@@ -124,6 +124,10 @@ main img {
     width: 100%;
 }
 
+.map {
+    display: none;
+}
+
 .contactinfo{
     background-color: #00aeff;
     color: white;
