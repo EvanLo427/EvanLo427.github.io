@@ -14,10 +14,6 @@
 
     }
 
-    h1 {
-        font-size: 50px;
-    }
-
     nav ul {
         display:flex;
     }
@@ -31,27 +27,36 @@
 		flex: 1 1 100%; 
 	}
     
-    section image {
-        max-width: 84%;
-        padding: 0em 1.30em 0em 1.30em;
-    }
-
-
-    #weathersummary {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        top: 32px;
-    }
-
     .contactinfo{
-        width: 75%;
+        max-width: 100%;
     }
 
-    .article img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 425px;
+    .contactmethods img{
+        max-width: 31px;
+    }
+
+    .map{
+        display: flex;
+        max-width: 25%;
+        float: left;
+        margin-right: 2em;
+    }
+
+    main {
+        margin: 5vh 8vw;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main figure {
+        margin: 4%;
+    }
+
+    main figcaption {
+        padding: 5%;
+    }
+
+    main figure:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
+        transition: .1s;
     }
 }
