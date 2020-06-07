@@ -91,6 +91,15 @@ header img {
 }
 
 /*main*/
+
+h1, h2, h3{
+    font-family: 'Varela Round', cursive;
+}
+
+p{
+    font-family: 'Roboto Condensed', cursive;
+}
+
 main {
     margin: 5vh 4vw 5vh 4vw;
     display: grid;
