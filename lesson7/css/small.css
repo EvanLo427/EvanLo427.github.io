@@ -87,8 +87,11 @@ header img {
 }
 
 /*main*/
-p{
+
+
+body, main{
     font-family: 'Roboto Condensed', cursive;
+    font-size: 24px;
 }
 
 main {
