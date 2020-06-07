@@ -124,10 +124,6 @@ main img {
     width: 100%;
 }
 
-.map {
-    display: none;
-}
-
 .contactinfo{
     background-color: #00aeff;
     color: white;
@@ -137,6 +133,14 @@ main img {
     margin: 0 auto;
     text-align: center;
     align-content: center;
+}
+
+.contactmethods{
+    max-width: 60%;
+}
+
+.contactmethods img{
+    max-width: 31px;
 }
 
 /*footer*/

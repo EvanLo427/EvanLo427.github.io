@@ -48,11 +48,10 @@
 
   .contactinfo{
     width: 100%;
-  }
-
-  .map{
+}
+.map{
     display: flex;
-    max-width: 25%;
+    max-width: 45%;
     float: left;
     margin-right: 2em;
   }
