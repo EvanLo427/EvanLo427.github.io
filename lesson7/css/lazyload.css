@@ -10,12 +10,12 @@ picture img{
 }
 
 img[data-src] {
-    filter: blur(3px);
+    filter: blur(0.2em);
 }
 
 img {
     filter: blur(0em);
-    transition: filter 1s;
+    transition: filter 0.5s;
 }
 
 footer{
