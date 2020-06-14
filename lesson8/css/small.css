@@ -1,7 +1,21 @@
 /*phone viewport*/
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Varela+Round&display=swap');
-
-/*phone view*/
+/*banner*/
+#banner{
+    color: white;
+    background:radial-gradient(white , #00aeff , #4169e1);
+    text-align: center;
+    font-size: 1em;
+	margin: 0;
+    padding: 0.25em;
+}
+/*body*/
+body {
+    background-color: white ; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 /*navigation*/
 nav button{
     font-size: 1.6rem;
@@ -42,25 +56,6 @@ nav a {
     color: white;
     text-decoration: none;
 }
-
-/*banner*/
-#banner{
-    color: white;
-    background:radial-gradient(white , #00aeff , #4169e1);
-    text-align: center;
-    font-size: 1em;
-	margin: 0;
-    padding: 0.25em;
-}
-
-/*body*/
-body {
-    background-color: white ; 
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
 /*Header*/
 header {
     color: white;
@@ -93,37 +88,7 @@ header img {
 
 /*main*/
 
-
-main{
-    font-family: 'Roboto Condensed', cursive;
-    font-size: 24px;
-}
-
-main {
-    margin: 5vh 4vw 5vh 4vw;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-main figure {
-    text-align: center;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
-    margin: 5%;
-    transition: .1s;
-}
-
-main figcaption {
-    padding: 8%;
-    font-size: smaller;
-}
-
-main img {
-    min-height: 210px;
-    min-width: 250px;
-    height: 100%;
-    width: 100%;
-}
-
+/*Contact info*/
 .map {
     display: none;
 }

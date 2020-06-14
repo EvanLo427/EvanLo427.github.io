@@ -1,9 +1,12 @@
 /*computer viewport*/
 @media only screen and (min-width: 60em) {
+    /*banner*/
+    /*body*/
     body{
         background-color: white;
     }
 
+    /*Header*/
     header {
         grid-template-columns: 1fr 1fr;
         text-align: left;
@@ -18,6 +21,7 @@
         font-size: 36px;
     }
 
+    /*navigation*/
     nav ul {
         display:flex;
     }
@@ -31,6 +35,8 @@
 		flex: 1 1 100%; 
 	}
     
+    /*main*/
+    /*Contact info*/
     .contactinfo{
         max-width: 100%;
     }
@@ -45,22 +51,5 @@
         float: left;
         margin-right: 2em;
     }
-
-    main {
-        margin: 5vh 8vw;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    main figure {
-        margin: 4%;
-    }
-
-    main figcaption {
-        padding: 5%;
-    }
-
-    main figure:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
-        transition: .1s;
-    }
+    /*footer*/
 }
