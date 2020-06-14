@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lazy Load</title>
+    <meta name="description" content="W07 Activity: Progressive Loading of Images">
+    <!--link to favicon-->
+    <link rel="Shortcut Icon" href="images/icon.png">
+    <!--link files in css folder-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lazyload.css">
+</head>
+
+<body>
+    <h2>Lazy loading</h2>
+    <h2>Evan Lo</h2>
+        <picture>
+            <img src="https://placehold.co/300x400/jpg" data-src='images/pexels.jpg' alt="pexels">            
+        </picture>
+        
+        <picture>
+            <img src="https://placehold.co/300x400/jpg" data-src='images/elephant.jpg' alt="elephant">
+        </picture>
+
+        <picture>
+            <img src="https://placehold.co/300x400/jpg" data-src='images/elephants.jpg' alt="elephants">
+        </picture>
+
+        <picture>
+            <img src="https://placehold.co/300x400/jpg" data-src='images/lion.jpg' alt="lion">
+        </picture>
+
+        <picture>
+            <img src="https://placehold.co/300x400/jpg" data-src='images/tree.jpg' alt="tree">
+        </picture>
+
+        <picture>
+            <img src="https://placehold.co/300x400/jpg" data-src='images/zebras.jpg' alt="zebras">
+        </picture>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a class="link" href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p class="modified">Last updated on <span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+    </script>
+</body>
+</html>

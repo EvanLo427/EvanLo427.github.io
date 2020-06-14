@@ -1,0 +1,64 @@
+body {
+    margin: 3em auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.highlight {
+    background-color: #628ca6;
+    color: white
+}
+
+#sales-table {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sales-table,
+#sales-table th,
+#sales-table td {
+    border: 1px solid lightgray;
+}
+
+#sales-table .table-title {
+    font-size: x-large;
+    background-color: #7fb9c2;
+}
+
+#sales-table .table-title th {
+    padding: .35em 2em;
+}
+
+#sales-table .table-headers {
+    font-size: large;
+}
+
+#sales-table .table-headers th {
+    padding: .35em 1em;
+
+}
+
+#sales-table tbody tr:nth-of-type(even) {
+    background-color: #e7ffed;
+}
+
+#sales-table tbody tr:nth-of-type(odd) {
+    background-color: #e7f0ed;
+}
+
+
+#sales-table tbody td {
+    padding: .35em 1em;
+}
+
+#sales-table tfoot {
+    background-color: #7fb9c2;
+}
+
+#sales-table tfoot td {
+    font-size: small;
+    padding: .75em 3em;
+}
