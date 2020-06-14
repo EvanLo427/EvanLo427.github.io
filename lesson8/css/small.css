@@ -56,6 +56,9 @@ nav a {
     color: white;
     text-decoration: none;
 }
+.active{
+    background-color: #4169e1;
+}
 /*Header*/
 header {
     color: white;
