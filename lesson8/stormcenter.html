@@ -35,106 +35,106 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li><a href="https://evanlo427.github.io/">Home</a></li>
+            <li><a href="https://evanlo427.github.io/lesson6/preston-6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li class="active"><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li class="active"><a href="https://evanlo427.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://evanlo427.github.io/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <main>
-            <h1 class="align-center">Report a storm!</h1>
-            <form id="SCForm" action="thanks.html" name="stormForm">
-              <h2 class="mb-5">Contact Information</h2>
-              <span class="ml-2 mr-5 d-flex flex-column">
-                <label for="fullName" class="mb-1">
-                  Full Name
-                  <span class="required"> *</span>
-                </label>
-                <input
-                  type="text"
-                  name="fullName"
-                  id="fullName"
-                  required
-                  class="mb-3"
-                  autofocus
-                  pattern="^[a-zA-Z ]{5,}$"
-                />
-                <label for="email" class="mb-1">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="email@address.com"
-                  id="email"
-                  class="mb-3"
-                />
-                <label for="phoneNumber" class="mb-1"
-                  >Phone Number<span class="required"> *</span></label
-                >
-                <input type="tel" name="phoneNumber" id="phoneNumber" class="mb-3" required />
-                <label for="zipCode" class="mb-1">Zip Code<span class="required"> *</span></label>
-                <input type="number" name="zipCode" id="zipCode" class="mb-3" required />
-              </span>
     
-              <h2 class="mb-5">Storm Details</h2>
-              <span class="ml-2 mr-5 d-flex flex-column">
-                <label for="stormDate" class="mb-1">Storm Date</label>
-                <input type="date" name="stormDate" id="stormDate" class="mb-3" />
-                <label for="stormRegion" class="mb-1">Storm Region</label>
-                <select name="stormRegion" id="stormRegion" class="mb-3">
-                  <option disabled hidden selected value="">Select Region...</option>
-                  <option value="preston">Preston</option>
-                  <option value="sodaSprings">Soda Springs</option>
-                  <option value="fishHaven">Fish Haven</option>
-                </select>
-                <label for="stormType" class="mb-1">Storm Type</label>
-                <input list="stormTypes" name="stormType" id="stormType" class="mb-3" />
-                <datalist id="stormTypes">
-                  <option>Flash Flood</option>
-                  <option>Hail</option>
-                  <option>Hurricane</option>
-                  <option>Thunderstorm</option>
-                  <option>Tornado</option>
-                </datalist>
-                <label for="stormSeverity" class="mb-1">Storm Severity</label>
-                <div class="d-flex mb-3">
-                  <input
-                    type="range"
-                    name="stormSeverity"
-                    id="stormSeverity"
-                    value="1"
-                    min="1"
-                    max="10"
-                    onchange="updateRange(this.value);"
-                  />
-                  <span id="stormSeverityVal" class="ml-2"></span>
-                </div>
-                <label for="fullName" class="mb-1">Danger Present?</label>
-                <div class="d-flex mb-3">
-                  Yes
-                  <input type="radio" name="danger" value="Yes" class="mr-3 ml-1 my-auto" />
-                  No
-                  <input type="radio" name="danger" value="No" class="mr-3 ml-1 my-auto" />
-                  Maybe
-                  <input type="radio" name="danger" value="Maybe" class="mr-3 ml-1 my-auto" />
-                </div>
-                <label for="comments" class="mb-1">Comments</label>
-                <textarea name="comments" id="comments" class="mb-5"></textarea>
-              </span>
-              <button
-                type="submit"
-                name="submit"
-                id="submit"
-                form="SCForm"
-                value="submit"
-                class="mx-auto"
-              >
-                Submit
-              </button>
-            </form>
-          </main>
+    <main>
+        <h1 class="align-center">Report a storm!</h1>
+        <form id="SCForm" action="thanks.html" name="stormForm">
+          <h2 class="mb-5">Contact Information</h2>
+          <span class="ml-2 mr-5 d-flex flex-column">
+            <label for="fullName" class="mb-1">
+              Full Name
+              <span class="required"> *</span>
+            </label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              required
+              class="mb-3"
+              autofocus
+              pattern="^[a-zA-Z ]{5,}$"
+            />
+            <label for="email" class="mb-1">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@address.com"
+              id="email"
+              class="mb-3"
+            />
+            <label for="phoneNumber" class="mb-1"
+              >Phone Number<span class="required"> *</span></label
+            >
+            <input type="tel" name="phoneNumber" id="phoneNumber" class="mb-3" required />
+            <label for="zipCode" class="mb-1">Zip Code<span class="required"> *</span></label>
+            <input type="number" name="zipCode" id="zipCode" class="mb-3" required />
+          </span>
+
+          <h2 class="mb-5">Storm Details</h2>
+          <span class="ml-2 mr-5 d-flex flex-column">
+            <label for="stormDate" class="mb-1">Storm Date</label>
+            <input type="date" name="stormDate" id="stormDate" class="mb-3" />
+            <label for="stormRegion" class="mb-1">Storm Region</label>
+            <select name="stormRegion" id="stormRegion" class="mb-3">
+              <option disabled hidden selected value="">Select Region...</option>
+              <option value="preston">Preston</option>
+              <option value="sodaSprings">Soda Springs</option>
+              <option value="fishHaven">Fish Haven</option>
+            </select>
+            <label for="stormType" class="mb-1">Storm Type</label>
+            <input list="stormTypes" name="stormType" id="stormType" class="mb-3" />
+            <datalist id="stormTypes">
+              <option>Flash Flood</option>
+              <option>Hail</option>
+              <option>Hurricane</option>
+              <option>Thunderstorm</option>
+              <option>Tornado</option>
+            </datalist>
+            <label for="stormSeverity" class="mb-1">Storm Severity</label>
+            <div class="d-flex mb-3">
+              <input
+                type="range"
+                name="stormSeverity"
+                id="stormSeverity"
+                value="1"
+                min="1"
+                max="10"
+                onchange="updateRange(this.value);"
+              />
+              <span id="stormSeverityVal" class="ml-2"></span>
+            </div>
+            <label for="fullName" class="mb-1">Danger Present?</label>
+            <div class="d-flex mb-3">
+              Yes
+              <input type="radio" name="danger" value="Yes" class="mr-3 ml-1 my-auto" />
+              No
+              <input type="radio" name="danger" value="No" class="mr-3 ml-1 my-auto" />
+              Maybe
+              <input type="radio" name="danger" value="Maybe" class="mr-3 ml-1 my-auto" />
+            </div>
+            <label for="comments" class="mb-1">Comments</label>
+            <textarea name="comments" id="comments" class="mb-5"></textarea>
+          </span>
+          <button
+            type="submit"
+            name="submit"
+            id="submit"
+            form="SCForm"
+            value="submit"
+            class="mx-auto"
+          >
+            Submit
+          </button>
+        </form>
+    </main>
     
     <div class="contactinfo">
             <img class="map" src="images/maps.png" alt="Preston Idaho on map">

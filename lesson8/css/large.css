@@ -36,6 +36,10 @@
 	}
     
     /*main*/
+    main {
+        margin: 5vh 8vw;
+    }
+    
     /*Contact info*/
     .contactinfo{
         max-width: 100%;

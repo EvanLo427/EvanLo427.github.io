@@ -90,7 +90,9 @@ header img {
 }
 
 /*main*/
-
+main {
+    margin: 5vh 4vw;
+}
 /*Contact info*/
 .map {
     display: none;
