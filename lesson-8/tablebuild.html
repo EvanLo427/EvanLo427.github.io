@@ -1,60 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Table Build</title>
-    <meta name="description" content="WDD 230" />
-    <link rel="stylesheet" href="css/supporting.css"/>
-  </head>
-  <body>
-    <table id="sales-table">
-      <thead>
-        <tr class="table-title">
-          <th colspan="3">ACME Wildwest</th>
-        </tr>
-        <tr class="table-headers highlight">
-          <th>Period</th>
-          <th>Sales</th>
-          <th>Sales Goal</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>August</td>
-          <td>$3,590</td>
-          <td>$4,000</td>
-        </tr>
-        <tr>
-          <td>September</td>
-          <td>$4,420</td>
-          <td>$5,000</td>
-        </tr>
-        <tr>
-          <td>October</td>
-          <td>$4,870</td>
-          <td>$5,000</td>
-        </tr>
-        <tr>
-          <td>November</td>
-          <td>$8,610</td>
-          <td class="highlight">$7,500</td>
-        </tr>
-        <tr>
-          <td><i>Black Friday</i></td>
-          <td colspan="2">$3,200</td>
-        </tr>
-        <tr>
-          <td>December</td>
-          <td>$6,820</td>
-          <td>$7,500</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr class="table-footer">
-          <td colspan="3">Compiled 12.20.2020 by bRauls</td>
-        </tr>
-      </tfoot>
-    </table>
-    </body>
+    <meta name="description" content="WDD230 - Evan Lo" />
+    <link href="css/supporting.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">ACME Wildwest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #628ca6; color: white;">
+                    <th>Period</th>
+                    <th>Sales</th>
+                    <th>Sales Goal</th>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>$3,590</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>$4,420</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>$4,870</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>$8,610</td>
+                    <td style="background-color: #628ca6; color: white;">$7,500</td>
+                </tr>
+                <tr>
+                    <td><i>Black Friday</i></td>
+                    <td colspan="2">$3,200</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({ google: { families: ["Ubuntu"] } });
+        </script>
+    </footer>
+</body>
 </html>
