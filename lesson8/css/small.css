@@ -93,6 +93,31 @@ header img {
 main {
     margin: 5vh 4vw;
 }
+.required {
+    color: red;
+}
+#SCForm {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 4vw - 20%);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1% 10%;
+}
+
+#SCForm input:not(#submit) {
+    height: 1.2em;
+    padding: 2%;
+}
+
+#submit {
+    width: 30%;
+    padding: 2%;
+}
+
+#SCForm select {
+    padding: 2%;
+}
 /*Contact info*/
 .map {
     display: none;

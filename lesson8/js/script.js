@@ -23,3 +23,10 @@ if (dayOfWeek == 5) {
 } else {
     document.getElementById("notice").style.display = 'none';
 }
+
+//form updateRange
+function updateRange(val) {
+    document.getElementById('stormSeverityVal').innerHTML = val;
+  }
+  
+  updateRange(1);
