@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Good Weather for everyone</title>
+    <meta name="description" content="Preston Town Page for lesson 6">
+    <!--link to favicon-->
+    <link rel="Shortcut Icon" href="images/icon.png">
+    <!--link files in css folder-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div class="notice" id="notice">
+         <p>
+            Saturday = Preston Pancake in the Park! <br />9:00 a.m. Saturday at the city park.
+        </p>
+    </div>
+
+    <header>
+        <img src="images/icon.png" alt="weather website logo" />
+    <div>
+        <h1>Good Weather for everyone</h1>
+        <h2>Local news and weather for everyone.</h2>
+        <h2>Evan Lo</h2>
+    </div>
+    </header>
+
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <main>
+        <form class="flex flex-column" method="GET" action="thanks.html" autocomplete="on">
+            <h2>Report Weather Near You</h2>
+            <p>If weather is happening near you, we'd like to hear about it.</p>
+            <hr>
+            <fieldset class="flex flex-column">
+            <label>Full Name<span>*</span>
+                    <input type="text" name="name" placeholder="Your full name"
+                        pattern="[A-Za-z]{2,}\s[A-Za-z]{3,}|[A-Za-z]{3,}\s[A-Za-z]{2,}" required><small>Please
+                        insert your first and last name. Must be at least five characters.</small>
+            </label>
+            <label>Email
+                <input type="email" name="email" placeholder="email@myemail.com">
+            </label>
+            <label>Phone<span>*</span>
+                <input type="tel" name="phone" placeholder="1235556789" required>
+            </label>
+                <label>Zip Code<span>*</span>
+                    <input type="number" name="zip" placeholder="Your Zip Code" required>
+            </label>
+            </fieldset>
+            <fieldset class="flex flex-column">
+                <label>Date of Storm
+                    <input type="date" name="stormDate">
+                </label>
+                <label>Type of Storm
+                    <input name="stormType" list="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    </label>
+                    <label for="rating">Storm Rating
+                        <input type="range" id="rating" value="1" min="1" max="10" step="1" list="rangeMarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingValue">1</span>
+                    </label>
+                    <datalist id="rangeMarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <label>Storm Region
+                        <select name="stormRegion">
+                            <option value="" disabled selected>Select Region</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="flex flex-column">
+                    <p>Public in-danger</p>
+                    <label>
+                        <input type="radio" name="publicDanger" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="publicDanger" value="maybe">
+                        Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="publicDanger" value="no">
+                        No
+                    </label>
+                </fieldset>
+                <label>Comments
+                    <textarea placeholder="Please tell us any other information you'd like us to know"></textarea>
+                </label>
+                <input type="submit" value="Report Weather">
+            </form>
+        </main>
+    
+    <div class="contactinfo">
+            <img class="map" src="images/maps.png" alt="Preston Idaho on map">
+            <div class="contactmethods">
+            <p>
+                <b>Good Weather for everyone</b><br><br>
+                &#x1F4CD; 30 N 1st E<br>
+                Preston, ID 83263<br><br>
+                &#128222; 999.999.9999<br>
+                &#x2709; service@weather-1.net<br><br>
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/pinterest.png" alt="pinterest">
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/whatsapp.png" alt="whatsapp">
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <p>Last updated on <span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+    </script>
+</body>
+</html>
