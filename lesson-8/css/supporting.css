@@ -34,11 +34,20 @@ tbody tr {
     background: #e7f0ed;
 }
 
+#body{
+background-color: #628ca6; 
+color: white;"
+}
+
+#change{
+    background-color: #628ca6; 
+    color: white;
+}
 tr:nth-child(even) {
     background-color: #e7ffed;
 }
 
-tfoot {
+#footer {
     color: black; 
     background: #7fb9c2;
     font-size: .7em;
