@@ -4,6 +4,7 @@ fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
+
   .then(function (jsonObject) {
     console.table(jsonObject); // temporary checking for valid response and data parsing
     const prophets = jsonObject["prophets"];
@@ -25,13 +26,5 @@ fetch(requestURL)
       card.appendChild(images);
 
       document.querySelector("div.cards").appendChild(card);
-    }
-  });
-
-  WebFont.load({
-    google: {
-      families: [
-         'Montserrat', 'Oswald', 'Play'
-      ]
     }
   });

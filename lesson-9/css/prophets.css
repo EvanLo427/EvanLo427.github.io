@@ -7,11 +7,11 @@ body {
 }
 
 header {
-    color: steelblue;
+    color: #00aeff;
 }
 
 main {
-    background-color:whitesmoke;
+    background-color:white;
 
     margin: 50px;
     box-shadow: 2px 2px 8px 8px grey;
@@ -23,7 +23,7 @@ h1, h2 {
 }
 
 section {
-    background-color: steelblue;
+    background-color:#4169e1;
     border: 1px solid black;
     margin: 5px;
     padding: 15px;
