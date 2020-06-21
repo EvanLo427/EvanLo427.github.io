@@ -90,25 +90,43 @@ header img {
 }
 
 /*main*/
-.townContainer h2 {
-    font-size: 1.9em;
-}
-
-.townContainer h3 {
-    font-size: 1.25em;
-    font-style: italic;
-}
-
-.townContainer p {
-    font-size: 1.2em;
-}
-
-.townContainer img {
-    border: 2px solid #000000;
-    max-width: 400px;
-    width: 100%;
-    margin: auto;
-}
+.townData {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  
+  .townData h2,
+  h3,
+  p {
+    color: black;
+    
+  }
+  
+  .townData h2 {
+    border-bottom: 1px solid#4169e1;
+  }
+  
+  .townData p {
+    margin: 0em 0em;
+    
+  }
+  
+  .townData div {
+    background-color: var(--background2);
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .townData img {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 1em;
+    border: 5px white;
+    border-style: solid;
+  }
 
 
 /*Contact info*/

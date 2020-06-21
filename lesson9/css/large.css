@@ -36,95 +36,27 @@
 	}
     
     /*main*/
-    .townContainer {
-        display: flex;
-    }
+    .townData {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;;
+        grid-gap: 20px;
+      }
+      
+      .townData div {
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 1fr 1fr;
+      }
     
-    .townContainer article {
-        justify-content: space-between;
-        max-width: 30%;
-        padding: 0;
-        flex-direction: column;
-    }
+      .townData div div {
+        width: 100%;
+        padding: 1em 0;
+      }
     
-    .townContainer img {
-        border: none;
-        margin: 0px;
-    }
-
-    .townContainer article:nth-child(2) {
-        flex-direction: column;
-    }
-
-    .townContainer h2 {
-        font-size: 1.9em;
-    }
-    
-    .townContainer h3 {
-        font-size: 1.25em;
-        font-style: italic;
-    }
-    
-    .townContainer p {
-        font-size: 1.2em;
-    }
-
-    .townContainer h2 {
-        font-size: 1.9em;
-    }
-    
-    .townContainer h3 {
-        font-size: 1.35em;
-        font-style: italic;
-    }
-    
-    .townContainer p {
-        font-size: 1.2em;
-    }    .townContainer {
-        display: flex;
-    }
-    
-    .townContainer article {
-        justify-content: space-between;
-        max-width: 30%;
-        padding: 0;
-        flex-direction: column;
-    }
-    
-    .townContainer img {
-        border: none;
-        margin: 0px;
-    }
-
-    .townContainer article:nth-child(2) {
-        flex-direction: column;
-    }
-
-    .townContainer h2 {
-        font-size: 1.9em;
-    }
-    
-    .townContainer h3 {
-        font-size: 1.25em;
-        font-style: italic;
-    }
-    
-    .townContainer p {
-        font-size: 1.2em;
-    }
-
-    .townContainer h2 {
-        font-size: 1.9em;
-    }
-    
-    .townContainer h3 {
-        font-size: 1.35em;
-        font-style: italic;
-    }
-    
-    .townContainer p {
-        font-size: 1.2em;
-    }
+      .townData div img{
+        width: 100%;
+      }
 
     /*Contact info*/
     .contactinfo{

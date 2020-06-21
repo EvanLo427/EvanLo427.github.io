@@ -40,33 +40,27 @@
   }
   
   /*main*/
-  .townContainer article {
-    justify-content: space-between;
+  .townData div {
+    display: flex;
     flex-direction: row;
-    padding: 0;
-}
+    justify-content: center;
+  }
 
-.townContainer article:nth-child(2) {
+  .townData div:nth-child(odd) {
     flex-direction: row-reverse;
-}
+  }
 
-.townContainer div {
-    margin: 0 auto;
-    padding: 13px;
-}
+  .townData div div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
 
-.townContainer img {
-    margin: 20px;
-}
-
-.townContainer h3 {
-    font-size: 1.1em;
-    font-style: italic;
-}
-
-.townContainer p {
-    font-size: 1em;
-}
+  .townData div img {
+    width: 50%;
+    height: auto;
+    margin: 0 0;
+  }
   
   /*Contact info*/
   .contactinfo{
