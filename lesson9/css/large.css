@@ -43,18 +43,18 @@
         grid-gap: 20px;
       }
       
-      .townData div {
+      .townData box {
         display: grid;
         justify-items: center;
         grid-template-rows: 1fr 1fr;
       }
     
-      .townData div div {
+      .townData div box {
         width: 100%;
         padding: 1em 0;
       }
     
-      .townData div img{
+      .townData box img{
         width: 100%;
       }
 

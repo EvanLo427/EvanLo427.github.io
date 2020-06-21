@@ -39,7 +39,7 @@ fetch(requestURL)
 
         myTowns.forEach(town => {
 
-            let card = document.createElement('div');
+            let card = document.createElement('box');
             let townData = document.createElement('div');
             let townName = document.createElement('h2');
             let townMotto = document.createElement('h3');

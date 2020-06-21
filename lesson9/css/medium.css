@@ -40,23 +40,24 @@
   }
   
   /*main*/
-  .townData div {
+  .townData box {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 1em;
   }
 
-  .townData div:nth-child(odd) {
+  .townData box:nth-child(odd) {
     flex-direction: row-reverse;
   }
 
-  .townData div div:first-of-type {
+  .townData box div:first-of-type {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
 
-  .townData div img {
+  .townData box img {
     width: 50%;
     height: auto;
     margin: 0 0;

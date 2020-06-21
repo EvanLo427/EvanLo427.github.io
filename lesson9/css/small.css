@@ -95,25 +95,30 @@ header img {
     grid-template-columns: 1fr;
     justify-content: center;
   }
+
+  .townData box{
+    background-color: #4169e1;
+    box-shadow: 0 0 1em;
+    border: 5px white;
+    border-style: solid;
+  }
   
   .townData h2,
   h3,
   p {
-    color: black;
-    
+    color: white;
   }
   
   .townData h2 {
     border-bottom: 1px solid#4169e1;
+    color: white;
   }
   
   .townData p {
     margin: 0em 0em;
-    
   }
   
   .townData div {
-    background-color: var(--background2);
     padding: 1em 1em;
     display: flex;
     flex-direction: column;
