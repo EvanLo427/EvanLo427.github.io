@@ -1,54 +1,48 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
-  .then(response => {
+  .then(function (response) {
     return response.json();
   })
-  .then(jsonObject => {
-    const towns = jsonObject['towns'];
+  .then(function (jsonObject) {
+      console.table(jsonObject); // temporary checking for valid response and data parsing
+      const towns = jsonObject['towns'];
 
-    for (let j = 0; j < towns.length; j++) {
-      const cities = ['Preston', 'Fish Haven', 'Soda Springs'];
+      const southernTowns = towns.filter(town => (town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven'));
 
-      if (!cities.includes(towns[j].name)) {
-        continue;
-      }
+      southernTowns.forEach(town => {
 
-      towns[j].motto = towns[j].motto.replace('.', '. <br />');
-      let cityCard = document.createElement('div');
+        let eachTown = document.createElement('article');
+        let townContainer = document.createElement('div');
+        let townName = document.createElement('h2');
+        let townMotto = document.createElement('h3');
+        let yearFounded = document.createElement('p');
+        let population = document.createElement('p');
+        let annualRain = document.createElement('p');
+        let image = document.createElement('img');
 
-      cityCard.classList.add('city');
+        eachTown.appendChild(townContainer);
+        eachTown.appendChild(image);
 
-      let fill = document.createElement('div');
+        townName.innerHTML = `${town.name}`;
+        townContainer.appendChild(townName);
 
-      let h2 = document.createElement('h2');
-      let p = document.createElement('p');
-      let i = document.createElement('i');
-      let ul = document.createElement('ul');
-      let yearFounded = document.createElement('li');
-      let population = document.createElement('li');
-      let rainFall = document.createElement('li');
-      let img = document.createElement('img');
+        townMotto.innerHTML = `${town.motto}`;
+        townContainer.appendChild(townMotto);
 
-      h2.textContent = towns[j].name;
-      i.innerHTML = towns[j].motto;
-      p.appendChild(i);
-      yearFounded.textContent = `Year Founded: ${towns[j].yearFounded}`;
-      population.textContent = `Population: ${towns[j].currentPopulation}`;
-      rainFall.textContent = `Annual Rain Fall: ${towns[j].averageRainfall}`;
-      ul.appendChild(yearFounded);
-      ul.appendChild(population);
-      ul.appendChild(rainFall);
+        yearFounded.innerHTML = `Year Founded: ${town.yearFounded}`;
+        townContainer.appendChild(yearFounded);
 
-      img.setAttribute('src', `images/${towns[j].photo}`);
-      img.setAttribute('alt', towns[j].name);
+        population.innerHTML = `Population: ${town.currentPopulation}`;
+        townContainer.appendChild(population);
 
-      fill.appendChild(h2);
-      fill.appendChild(p);
-      fill.appendChild(ul);
-      cityCard.appendChild(fill);
-      cityCard.appendChild(img);
+        annualRain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
+        townContainer.appendChild(annualRain);
 
-      document.getElementById('cities').appendChild(cityCard);
-    }
-  });
+        image.setAttribute('src', `images/${town.photo}`);
+        image.setAttribute('alt', `${town.name}: ${town.motto}`);
+        
+        document.querySelector('div.townContainer').appendChild(eachTown);
+
+      });
+    });
