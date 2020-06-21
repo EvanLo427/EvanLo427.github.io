@@ -36,7 +36,25 @@
 	}
     
     /*main*/
-    
+    #cities {
+        flex-direction: row;
+        background-color: #485696;
+        padding: 1%;
+        margin-top: 5vh;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .city {
+        margin: 2% 2%;
+        background-color: #628b48;
+        flex-direction: column;
+
+    }
+
+    .city img {
+        max-width: 100%;
+        max-height: 100%;
+    }
     /*Contact info*/
     .contactinfo{
         max-width: 100%;

@@ -90,7 +90,42 @@ header img {
 }
 
 /*main*/
+#cities {
+    flex-direction: column;
+    color: white;
+    padding: 4%;
+    font-size: large;
+}
 
+.city {
+    background-color: #485696;
+    padding: 2% 4%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
+.city h2,
+.city p {
+    margin: 5px 0;
+}
+
+.city ul {
+    margin: 15% 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.city li {
+    margin: 5% 0;
+}
+
+.city img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 /*Contact info*/
 .map {
     display: none;
