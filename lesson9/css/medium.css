@@ -40,7 +40,33 @@
   }
   
   /*main*/
-  
+  .townContainer article {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0;
+}
+
+.townContainer article:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.townContainer div {
+    margin: 0 auto;
+    padding: 13px;
+}
+
+.townContainer img {
+    margin: 20px;
+}
+
+.townContainer h3 {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.townContainer p {
+    font-size: 1em;
+}
   
   /*Contact info*/
   .contactinfo{

@@ -90,6 +90,25 @@ header img {
 }
 
 /*main*/
+.townContainer h2 {
+    font-size: 1.9em;
+}
+
+.townContainer h3 {
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+.townContainer p {
+    font-size: 1.2em;
+}
+
+.townContainer img {
+    border: 2px solid #000000;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
 
 
 /*Contact info*/

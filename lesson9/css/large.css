@@ -36,7 +36,95 @@
 	}
     
     /*main*/
+    .townContainer {
+        display: flex;
+    }
     
+    .townContainer article {
+        justify-content: space-between;
+        max-width: 30%;
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .townContainer img {
+        border: none;
+        margin: 0px;
+    }
+
+    .townContainer article:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .townContainer h2 {
+        font-size: 1.9em;
+    }
+    
+    .townContainer h3 {
+        font-size: 1.25em;
+        font-style: italic;
+    }
+    
+    .townContainer p {
+        font-size: 1.2em;
+    }
+
+    .townContainer h2 {
+        font-size: 1.9em;
+    }
+    
+    .townContainer h3 {
+        font-size: 1.35em;
+        font-style: italic;
+    }
+    
+    .townContainer p {
+        font-size: 1.2em;
+    }    .townContainer {
+        display: flex;
+    }
+    
+    .townContainer article {
+        justify-content: space-between;
+        max-width: 30%;
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    .townContainer img {
+        border: none;
+        margin: 0px;
+    }
+
+    .townContainer article:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .townContainer h2 {
+        font-size: 1.9em;
+    }
+    
+    .townContainer h3 {
+        font-size: 1.25em;
+        font-style: italic;
+    }
+    
+    .townContainer p {
+        font-size: 1.2em;
+    }
+
+    .townContainer h2 {
+        font-size: 1.9em;
+    }
+    
+    .townContainer h3 {
+        font-size: 1.35em;
+        font-style: italic;
+    }
+    
+    .townContainer p {
+        font-size: 1.2em;
+    }
 
     /*Contact info*/
     .contactinfo{
