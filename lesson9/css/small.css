@@ -90,42 +90,7 @@ header img {
 }
 
 /*main*/
-.townData {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
-  
-  .townData h2,
-  h3,
-  p {
-    color: black;
-  }
-  
-  .townData h2 {
-    border-bottom: 1px solid red;
-  }
-  
-  .townData p {
-    margin: 0em 0em;
-  }
-  
-  .townData div {
-    background-color: var(--background2);
-    padding: 1em 1em;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .townData img {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: 0 0 1em;
-    border: 5px white;
-    border-style: solid;
-  }
-  
+
 /*Contact info*/
 .map {
     display: none;

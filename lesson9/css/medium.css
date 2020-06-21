@@ -40,33 +40,7 @@
   }
   
   /*main*/
-  .townData div {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .townData div:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
-
-  .townData div div:first-of-type {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .townData div img {
-    width: 100%;
-    height: auto;
-    margin: 0 0;
-  }
-
-  .homeArticle img {
-    width: 30%;
-    float: right;
-    margin-left: 1em;
-
-  }
+  
   /*Contact info*/
   .contactinfo{
     max-width: 100%;

@@ -36,26 +36,6 @@
 	}
     
     /*main*/
-    .townData {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 20px;
-      }
-      
-      .townData div {
-        display: grid;
-        justify-items: center;
-        grid-template-rows: 1fr 1fr;
-      }
-    
-      .townData div div {
-        width: 100%;
-        padding: 1em 0;
-      }
-    
-      .townData div img{
-        width: 100%;
-      }
     
     /*Contact info*/
     .contactinfo{
