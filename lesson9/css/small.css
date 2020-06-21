@@ -90,6 +90,36 @@ header img {
 }
 
 /*main*/
+.main-h2{
+    background-color: #4169e1;
+    padding: 1em; 
+    color: white;
+    text-align: center;
+}
+.main-article{
+    background-color: #4169e1;
+    box-shadow: 0 0 1em;
+    border: 5px white;
+    border-style: solid;
+    
+    padding: 1em; 
+    color: white;
+    text-align: left;
+}
+.main-article h2{
+    text-align: center;
+}
+.main-article img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.main-article a{
+    color: white !important;
+}
+
 .townData {
     display: grid;
     grid-template-columns: 1fr;
@@ -169,6 +199,7 @@ footer {
     padding: 1em;
 }
 
+main a,
 footer a {
     color: white !important;
 }

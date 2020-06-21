@@ -36,6 +36,9 @@
 	}
     
     /*main*/
+    .main-article img{
+        width: 25%;
+    }
     .townData {
         display: grid;
         grid-template-columns: repeat(3,1fr);

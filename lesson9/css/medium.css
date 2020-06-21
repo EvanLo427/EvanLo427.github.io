@@ -40,6 +40,9 @@
   }
   
   /*main*/
+  .main-article img{
+    width: 50%;
+}
   .townData box {
     display: flex;
     flex-direction: row;
