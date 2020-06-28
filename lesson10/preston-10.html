@@ -44,22 +44,81 @@
     </nav>
     
     <main>
-      <h2 class="main-h2"">Welcome!</h2>
+        <h2>Preston Idaho</h2>
+        <div id="hero">
+          <div id="hero-content">
+            <h3>Weather Summary</h3>
+            <hr/>
+            <table id="weatherSummary">
+              <tr>
+                <td>Currently:</td>
+                <td><span id="currently"></span></td>
+              </tr>
+              <tr>
+                <td>Temperature:</td>
+                <td><span id="temp"></span>&#176;F</td>
+              </tr>
+              <tr>
+                <td>Wind Speed:</td>
+                <td><span id="windSpeed"></span> mph</td>
+              </tr>
+              <tr>
+                <td>Wind Chill:</td>
+                <td><span id="windChill"></span></td>
+              </tr>
+              <tr>
+                <td>Humidity:</td>
+                <td><span id="humidity"></span>%</td>
+              </tr>
+            </table>
+          </div>
 
-      <article class="main-article">
-        <h2>LATEST FORECAST</h2>
-        <img src="images/main-article-img.png" alt="main-article-image">
-        <p><strong>Posted By: Sarah Jacobsen - Weather Anchor</strong></p>
-        <p><em>Updated: Saturday, June 20, 2020, at 2:08 p</em><em>.m.</em></p>
-        <p>Happy Summer Solstice! 
-          As we welcome in the first official day of summer 
-          you can expect the longest day of the year with 15 hours 26 minutes at 17 seconds of sunlight!</p>
-       
-        <a href="https://idahonews.com/weather"> >>> Read More Click Here<<< </a>
-      </article>
-
-      <div class="townData"></div>
-      <br><br>
+          <div id="hero-image">
+            <picture>
+              <source srcset="images/town-3.jpg" media="(min-width:1001px)" />
+              <source srcset="images/town-2.jpg" media="(min-width: 601px)" />
+              <img src="images/town-1.jpg" alt="Banner Image" />
+            </picture>
+          </div>
+        </div>
+        <section>
+          <h4>5 Day Forecast</h4>
+          <table>
+            <tr class="table-headrow">
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+            <tr id="forecastRow">
+              <!-- JavaScript Feed Here -->
+            </tr>
+          </table>
+        </section>
+        <article>
+          <img src="images/running.jpg" alt="Article Image" />
+          <div class="article-content">
+            <h3>Founders Day Fresco</h3>
+            <small>by Janica Juarez</small>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum. <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                culpa qui officia deserunt mollit anim id est laborum. 
+            </p>
+          </div>
+        </article>
     </main>
     
     <div class="contactinfo">
@@ -81,7 +140,6 @@
 
     <footer>
         <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-        <a href="https://wireframe.cc/ay1ijI">Desktop Wireframe</a> | <a href="https://wireframe.cc/U6g2yH">Tablet Wireframe</a> | <a href="https://wireframe.cc/SMzgIp">Phone Wireframe</a>  
         <p>Last updated on <span id="currentDate"></span></p>
     </footer>
     <script src="js/script.js"></script>

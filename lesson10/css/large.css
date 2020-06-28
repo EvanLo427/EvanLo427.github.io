@@ -36,31 +36,37 @@
 	}
     
     /*main*/
-    .main-article img{
-        width: 25%;
+    #hero {
+        margin-bottom: 2%;
     }
-    .townData {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        justify-content: center;;
-        grid-gap: 20px;
-      }
-      
-      .townData box {
-        display: grid;
-        justify-items: center;
-        grid-template-rows: 1fr 1fr;
-      }
-    
-      .townData div box {
-        width: 100%;
-        padding: 1em 0;
-      }
-    
-      .townData box img{
-        width: 100%;
-      }
 
+    #hero-content {
+        margin: 5% 5% 5% 15%;
+    }
+
+    section {
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    section table {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    article {
+        margin: 0 10%;
+        padding: 2% 4%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    article img {
+        order: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
     /*Contact info*/
     .contactinfo{
         max-width: 100%;
