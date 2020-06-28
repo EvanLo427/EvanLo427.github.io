@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Good Weather for everyone</title>
+    <meta name="description" content="W09 Assignment: The Weather Site Home Page">
+    <!--link to favicon-->
+    <link rel="Shortcut Icon" href="images/icon.png">
+    <!--link files in css folder-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div class="notice" id="notice">
+         <p>
+            Saturday = Preston Pancake in the Park! <br />9:00 a.m. Saturday at the city park.
+        </p>
+    </div>
+
+    <header>
+        <img src="images/icon.png" alt="weather website logo" />
+    <div>
+        <h1>Good Weather for everyone</h1>
+        <h2>Local news and weather for everyone.</h2>
+        <h2>Evan Lo</h2>
+    </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+      <h2 class="main-h2"">Welcome!</h2>
+
+      <article class="main-article">
+        <h2>LATEST FORECAST</h2>
+        <img src="images/main-article-img.png" alt="main-article-image">
+        <p><strong>Posted By: Sarah Jacobsen - Weather Anchor</strong></p>
+        <p><em>Updated: Saturday, June 20, 2020, at 2:08 p</em><em>.m.</em></p>
+        <p>Happy Summer Solstice! 
+          As we welcome in the first official day of summer 
+          you can expect the longest day of the year with 15 hours 26 minutes at 17 seconds of sunlight!</p>
+       
+        <a href="https://idahonews.com/weather"> >>> Read More Click Here<<< </a>
+      </article>
+
+      <div class="townData"></div>
+      <br><br>
+    </main>
+    
+    <div class="contactinfo">
+            <img class="map" src="images/maps.png" alt="Preston Idaho on map">
+            <div class="contactmethods">
+            <p>
+                <b>Good Weather for everyone</b><br><br>
+                &#x1F4CD; 30 N 1st E<br>
+                Preston, ID 83263<br><br>
+                &#128222; 999.999.9999<br>
+                &#x2709; service@weather-1.net<br><br>
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/pinterest.png" alt="pinterest">
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/whatsapp.png" alt="whatsapp">
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <a href="https://wireframe.cc/ay1ijI">Desktop Wireframe</a> | <a href="https://wireframe.cc/U6g2yH">Tablet Wireframe</a> | <a href="https://wireframe.cc/SMzgIp">Phone Wireframe</a>  
+        <p>Last updated on <span id="currentDate"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto']
+            }
+        });
+    </script>
+</body>
+</html>

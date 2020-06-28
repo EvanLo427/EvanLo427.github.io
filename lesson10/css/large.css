@@ -1,0 +1,80 @@
+/*computer viewport*/
+@media only screen and (min-width: 60em) {
+    /*banner*/
+    /*body*/
+    body{
+        background-color: white;
+    }
+
+    /*Header*/
+    header {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    header img {
+        text-align: right;
+
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    /*navigation*/
+    nav ul {
+        display:flex;
+    }
+
+    nav li:hover{
+        background-color: #4169e1;
+        color: white;
+    }
+    
+    nav ul li { 
+		flex: 1 1 100%; 
+	}
+    
+    /*main*/
+    .main-article img{
+        width: 25%;
+    }
+    .townData {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;;
+        grid-gap: 20px;
+      }
+      
+      .townData box {
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 1fr 1fr;
+      }
+    
+      .townData div box {
+        width: 100%;
+        padding: 1em 0;
+      }
+    
+      .townData box img{
+        width: 100%;
+      }
+
+    /*Contact info*/
+    .contactinfo{
+        max-width: 100%;
+    }
+
+    .contactmethods img{
+        max-width: 31px;
+    }
+
+    .map{
+        display: flex;
+        max-width: 25%;
+        float: left;
+        margin-right: 2em;
+    }
+    /*footer*/
+}
