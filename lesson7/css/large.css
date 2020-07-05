@@ -46,20 +46,19 @@
         margin-right: 2em;
     }
 
-    main {
-        margin: 5vh 8vw;
+    .Gallery-main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    main figure {
+    .Gallery-picture{
         margin: 4%;
     }
 
-    main figcaption {
+    .Gallery-picture p{
         padding: 5%;
     }
 
-    main figure:hover {
+    .Gallery-main picture:hover {
         box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
         transition: .1s;
     }

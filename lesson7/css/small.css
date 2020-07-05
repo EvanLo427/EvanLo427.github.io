@@ -94,30 +94,27 @@ header img {
 /*main*/
 
 
-main{
+.Gallery-main{
     font-family: 'Roboto Condensed', cursive;
     font-size: 24px;
-}
-
-main {
     margin: 5vh 4vw 5vh 4vw;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-main figure {
+.Gallery-picture{
     text-align: center;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
     margin: 5%;
     transition: .1s;
 }
 
-main figcaption {
+.Gallery-picture p{
     padding: 8%;
     font-size: smaller;
 }
 
-main img {
+.Gallery-picture img {
     min-height: 210px;
     min-width: 250px;
     height: 100%;
