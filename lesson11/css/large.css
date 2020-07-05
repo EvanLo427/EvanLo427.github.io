@@ -4,6 +4,8 @@
     /*body*/
     body{
         background-color: white;
+        max-width: 1200px;
+        margin: auto;
     }
     .content{
         max-width: 1200px;
