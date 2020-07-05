@@ -93,7 +93,26 @@
       .townDataJson box img{
         width: 100%;
       }
-    
+      /*Weatherr Gallery*/
+    .Gallery-main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Gallery-picture{
+        margin: 4%;
+    }
+
+    .Gallery-picture p{
+        padding: 5%;
+    }
+
+    .Gallery-main picture:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
+        transition: .1s;
+    }
+
+
+
     /*Contact info*/
     .contactmethods img{
         max-width: 31px;

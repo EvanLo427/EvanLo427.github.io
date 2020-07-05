@@ -128,6 +128,13 @@
     height: auto;
     margin: 0 0;
   }
+
+  /*Weatherr Gallery*/
+  .Gallery-main{
+    margin: 5vh 0;
+    grid-template-columns: 1fr 1fr;
+  }
+
   /*Contact info*/
   .contactinfo{
     max-width: 100%;

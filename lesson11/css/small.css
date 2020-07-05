@@ -302,6 +302,34 @@ main p{
     border-style: solid;
   }
 
+/*Weather Gallery*/
+.Gallery-main{
+    font-family: 'Roboto Condensed', cursive;
+    font-size: 24px;
+    margin: 5vh 4vw 5vh 4vw;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.Gallery-picture{
+    text-align: center;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+    margin: 5%;
+    transition: .1s;
+}
+
+.Gallery-picture p{
+    padding: 8%;
+    font-size: smaller;
+}
+
+.Gallery-picture img {
+    min-height: 210px;
+    min-width: 250px;
+    height: 100%;
+    width: 100%;
+}
+
 /*Contact info*/
 .map {
     display: none;
