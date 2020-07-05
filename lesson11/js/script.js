@@ -36,13 +36,6 @@ function windChill(t, s) {
     return `${wc}&#176;F`;
   }
 
-//form updateRange
-function updateRange(val) {
-  document.getElementById('stormSeverityVal').innerHTML = val;
-}
-
-updateRange(1);
-
 //Lazyload
 const imgOptions = {
   threshold: 0,
