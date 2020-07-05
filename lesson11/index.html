@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Good Weather for everyone</title>
-    <meta name="description" content="W09 Assignment: The Weather Site Home Page">
+    <meta name="description" content="Weather Site - HomePage">
     <!--link to favicon-->
     <link rel="Shortcut Icon" href="images/icon.png">
     <!--link files in css folder-->
@@ -34,32 +34,33 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li class="active"><a href="../index.html">Home</a></li>
-            <li><a href="../lesson6/preston-6.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    
+<div class="content">
     <main>
-      <h2 class="index-main-h2">Welcome!</h2>
-
-      <article class="index-main-article">
-        <h2>LATEST FORECAST</h2>
-        <img src="images/main-article-img.png" alt="main-article-image">
-        <p><strong>Posted By: Sarah Jacobsen - Weather Anchor</strong></p>
-        <p><em>Updated: Saturday, June 20, 2020, at 2:08 p</em><em>.m.</em></p>
+      <article class="index-main-article"> 
+        <div class="index-main-article-content">
+        <h3>LATEST FORECAST</h3>
+        <p>By Sarah Jacobsen - Weather Anchor</p>
+        <p>Saturday, June 20, 2020</p>
         <p>Happy Summer Solstice! 
           As we welcome in the first official day of summer 
-          you can expect the longest day of the year with 15 hours 26 minutes at 17 seconds of sunlight!</p>
-       
-        <a href="https://idahonews.com/weather"> >>> Read More Click Here<<< </a>
+          you can expect the longest day of the year with 15 hours 26 minutes at 17 seconds of sunlight!
+        </p>
+        <p><a href="https://idahonews.com/weather" target="_blank"> >>> Read More Click Here<<< </a></p>
+        </div>
+        <img src="images/main-article-img.png" alt="main-article-image">
       </article>
 
-      <div class="townDataJson"></div>
-      <br><br>
+      <div class="townDataJson">
+          <!-- JavaScript Write Here -->
+      </div>
     </main>
     
     <div class="contactinfo">
@@ -85,6 +86,7 @@
         <p>Last updated on <span id="currentDate"></span></p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/JsonAPI.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -93,5 +95,6 @@
             }
         });
     </script>
+</div>
 </body>
 </html>

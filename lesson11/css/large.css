@@ -5,6 +5,10 @@
     body{
         background-color: white;
     }
+    .content{
+        max-width: 1200px;
+        margin: auto;
+    }
 
     /*Header*/
     header {
@@ -12,13 +16,12 @@
         text-align: left;
     }
 
+    header h1 {
+        font-size: 3em;
+    }
+    
     header img {
         text-align: right;
-
-    }
-
-    header h1 {
-        font-size: 36px;
     }
 
     /*navigation*/
@@ -36,9 +39,39 @@
 	}
     
     /*main*/
-    .index-main-article img{
-        width: 25%;
+    #hero {
+        margin-bottom: 2%;
     }
+
+    #hero-content {
+        margin: 5% 5% 5% 5%;
+    }
+
+    .forecast-table {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .forecast-table table {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .town-article {
+        margin: 0 auto;
+        padding: 2% 2%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .town-article img {
+        order: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /*Index main*/
     .townDataJson {
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -54,18 +87,14 @@
     
       .townDataJson div box {
         width: 100%;
-        padding: 1em 0;
+        padding: 1em 1em;
       }
     
       .townDataJson box img{
         width: 100%;
       }
-
+    
     /*Contact info*/
-    .contactinfo{
-        max-width: 100%;
-    }
-
     .contactmethods img{
         max-width: 31px;
     }
