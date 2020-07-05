@@ -185,7 +185,7 @@ main p{
 .town-events{
     max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #whitesmoke;
+    background-color: whitesmoke;
     padding: 5%;
     text-align: left;
     margin: auto;
@@ -195,7 +195,7 @@ main p{
 
 .town-article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #whitesmoke;
+    background-color: whitesmoke;
     padding: 5%;
 }
 
