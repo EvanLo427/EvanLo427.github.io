@@ -500,11 +500,11 @@ main h1 {
   color: #e4c517;
   font-weight: 700;
 }
-main figure img {
-  width: 100%;
-}
 main figure {
   margin: 0;
+  width: 100%;
+}
+main figure img {
   width: 100%;
 }
 main figcaption {

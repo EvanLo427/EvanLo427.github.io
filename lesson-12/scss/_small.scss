@@ -45,13 +45,12 @@ main{display: block; padding: 1rem $gutter;
     h1 {color: $primartColor;
         font-weight: $heavyWeight;
     }
-
-    figure img {width: 100%;}
+    
     figure{
         margin: 0;
         width: 100%;
-        
-    }
+        img {width: 100%;}
+    } // ends figure
     figcaption {text-align: center; font-size: .8rem;}
 } // end main
 
