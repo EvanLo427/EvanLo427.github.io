@@ -1,0 +1,125 @@
+/*computer viewport*/
+@media only screen and (min-width: 60em) {
+    /*notice*/
+    /*body*/
+    body{
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    /*Header*/
+    header {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+    
+    header img {
+        text-align: right;
+        height: 70%;
+        width: auto;
+    }
+
+    /*navigation*/
+    nav ul {
+        display:flex;
+    }
+
+    nav li:hover{
+        background-color: white;
+    }
+    
+    nav ul li { 
+		flex: 1 1 100%; 
+	}
+    
+    /*main*/
+    #hero {
+        margin-bottom: 2%;
+    }
+
+    #hero-content {
+        margin: 5% 5% 5% 5%;
+    }
+
+    .forecast-table {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .forecast-table table {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .town-article {
+        margin: 0 auto;
+        padding: 2% 2%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .town-article img {
+        order: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /*Index main*/
+    .townDataJson {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;;
+        grid-gap: 20px;
+      }
+      
+      .townDataJson box {
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 1fr 1fr;
+      }
+    
+      .townDataJson div box {
+        width: 100%;
+        padding: 1em 1em;
+      }
+    
+      .townDataJson box img{
+        width: 100%;
+      }
+
+    /*Weatherr Gallery*/
+    .Gallery-main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Gallery-picture{
+        margin: 4%;
+    }
+
+    .Gallery-picture p{
+        padding: 5%;
+    }
+
+    .Gallery-main picture:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
+        transition: .1s;
+    }
+
+    /*Contact info*/
+    .contactmethods img{
+        max-width: 31px;
+    }
+
+    .map{
+        display: flex;
+        max-width: 25%;
+        float: left;
+        margin-right: 2em;
+    }
+    /*footer*/
+}

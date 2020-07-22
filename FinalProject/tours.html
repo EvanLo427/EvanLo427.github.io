@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tours | Your Journey</title>
+    <meta name="description" content="Your Journey, Scoots Rental, Cozumel Island">
+    <!--link to favicon-->
+    <link rel="Shortcut Icon" href="images/icon.png">
+    <!--link files in css folder-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png" alt="weather website logo" />
+    <div>
+        <h1>“Your Journey - Scoots Rental”</h1>
+        <h2>The Most Beautiful Island In The World</h2>
+    </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+          <li><a class="ham" href="#">&#9776; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li class="active"><a href="tours.html">Tours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+
+<div class="content">
+  <main>
+    <h2>Soda Springs Idaho</h2>
+    <div id="hero">
+      <div id="hero-content">
+        <h3>Weather Summary</h3>
+        <hr/>
+        <table id="weatherSummary">
+          <tr>
+            <td>Currently:</td>
+            <td><span id="currently"></span></td>
+          </tr>
+          <tr>
+            <td>Temperature:</td>
+            <td><span id="temp"></span>&#176;F</td>
+          </tr>
+          <tr>
+            <td>Wind Speed:</td>
+            <td><span id="windSpeed"></span> mph</td>
+          </tr>
+          <tr>
+            <td>Wind Chill:</td>
+            <td><span id="windChill"></span></td>
+          </tr>
+          <tr>
+            <td>Humidity:</td>
+            <td><span id="humidity"></span>%</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="hero-image">
+        <picture>
+          <source srcset="images/sodasprings-md.jpg" media="(min-width:1001px)" />
+          <source srcset="images/sodasprings-sm.jpg" media="(min-width: 601px)" />
+          <img src="images/sodasprings-lg.jpg" alt="Banner Image" />
+        </picture>
+      </div>
+    </div>
+
+    <section class="forecast-table">
+      <h4>5 Day Forecast</h4>
+      <table>
+        <tr class="table-headrow">
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+        <tr id="forecastRow">
+          <!-- JavaScript Feed Here -->
+        </tr>
+      </table>
+    </section>
+    
+    <section class="town-events">
+      <h2>Soda Springs Town Events</h2>
+      <div id="sodasprings-events">
+        <!-- JavaScript Write Here -->
+      </div>
+    </section>
+    
+    <article class="town-article">
+      <img src="images/article-sodasprings.jpg" alt="Article Image" />
+      <div class="article-content">
+        <h3>Soda Spring History</h3>
+        <small>by Janica Juarez</small>
+        <p>
+          Soda Springs is a community rich in history and overflowing with the potential for growth and expansion. 
+          It has the safety, friendliness and support of a small town while also offering a prime location for industry, 
+          agriculture and business. Soda Springs features five beautiful parks that offer playgrounds, pavilions, hiking, 
+          biking and cross country ski trails surrounded in nature, as well as an 18-hole disc golf course. 
+          Within 5 to 20 minutes of Soda Springs is access to swimming, fishing, boating, snow machining, camping, ATV trails, 
+          bird watching and hunting. 
+        </p>
+        <p><a href="https://www.sodaspringsid.com/visitors/history.php" target="_blank"> >>> Read More Click Here <<< </a></p>
+      </div>
+    </article>
+  </main>
+
+    <footer>
+      <div class="contactinfo">
+          <img class="map" src="images/maps.png" alt="Preston Idaho on map">
+          <div class="contactmethods">
+          <h1>Contact Us</h1>
+          <p>&#x1F4CD; Cozumel Island, Mexico 77600</p>
+          <p>&#128222; 999.999.9999</p>
+          <p>&#x2709; YourJourney-ScootsRental@gmail.com</p>
+              <img src="images/facebook.png" alt="facebook">
+              <img src="images/pinterest.png" alt="pinterest">
+              <img src="images/twitter.png" alt="twitter">
+              <img src="images/whatsapp.png" alt="whatsapp">
+          </p>
+          </div>
+      </div>
+      <HR>
+      <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+      <a href="https://wireframe.cc/apu97o">Desktop Wireframe</a> | <a href="https://wireframe.cc/uTvuOB">Tablet Wireframe</a> | <a href="https://wireframe.cc/Ewio5r">Phone Wireframe</a>  
+      <p>Last updated on <span id="currentDate"></span></p>
+    </footer>
+  <script src="js/script.js"></script>
+  <script src="js/SodaSprings.js"></script>
+</body>
+</html>

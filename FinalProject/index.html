@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Your Journey</title>
+    <meta name="description" content="Your Journey, Scoots Rental, Cozumel Island">
+    <!--link to favicon-->
+    <link rel="Shortcut Icon" href="images/icon.png">
+    <!--link files in css folder-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png" alt="weather website logo" />
+    <div>
+        <h1>“Your Journey - Scoots Rental”</h1>
+        <h2>The Most Beautiful Island In The World</h2>
+    </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+    <main>
+        <div class="banner-1" id="banner-1">
+            <p>
+                <strong style="color: red !important;">~ WEEKEND OFFER ONLY ~</strong>
+                <br><br>
+                   Rent a Scoots GET 30% OFF!!!
+                <br><br>
+                   <a href="reservations.html" style="color: red !important;"><button>BOOK IT NOW!</button></a>
+            </p>
+        </div>
+
+        <div class="banner-2" id="banner-2">
+          <p>
+              <strong style="color: red !important;">~ WEEKDAY OFFER ONLY ~</strong>
+              <br><br>
+                 Rent a Scoots GET 10% OFF!!!
+              <br><br>
+                 <a href="reservations.html" style="color: red !important;"><button>BOOK IT NOW!</button></a>
+          </p>
+        </div>
+        
+        <div id="hero">
+          <div id="hero-content">
+            <h3>Weather Summary</h3>
+            <hr/>
+            <table id="weatherSummary">
+              <tr>
+                <td>Currently:</td>
+                <td><span id="currently"></span></td>
+              </tr>
+              <tr>
+                <td>Temperature:</td>
+                <td><span id="temp"></span>&#176;F</td>
+              </tr>
+              <tr>
+                <td>Wind Speed:</td>
+                <td><span id="windSpeed"></span> mph</td>
+              </tr>
+              <tr>
+                <td>Wind Chill:</td>
+                <td><span id="windChill"></span></td>
+              </tr>
+              <tr>
+                <td>Humidity:</td>
+                <td><span id="humidity"></span>%</td>
+              </tr>
+            </table>
+          </div>
+  
+            <div id="hero-image">
+              <picture>
+                <source srcset="images/Southeast_Coast.jpg" media="(min-width:1001px)" />
+                <source srcset="images/Southeast_Coast.jpg" media="(min-width: 601px)" />
+                <img src="images/Southeast_Coast.jpg" alt="Banner Image" />
+              </picture>
+            </div>
+          </div>
+          <section class="forecast-table">
+            <h4>5 Day Forecast</h4>
+            <table>
+              <tr class="table-headrow">
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+              </tr>
+              <tr id="forecastRow">
+                <!-- JavaScript Feed Here -->
+              </tr>
+            </table>
+          </section>
+    </main>
+    
+
+
+    <footer>
+        <div class="contactinfo">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239239.16211757337!2d-87.1068581761754!3d20.46059634830222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cc34646e0d%3A0x50a5f2be21192a80!2sCentro%2C%2077600%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1595449038266!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="contactmethods">
+            <h1>Contact Us</h1>
+            <p>&#x1F4CD; Cozumel Island, Mexico 77600</p>
+            <p>&#128222; 999.999.9999</p>
+            <p>&#x2709; YourJourney-ScootsRental@gmail.com</p>
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/pinterest.png" alt="pinterest">
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/whatsapp.png" alt="whatsapp">
+            </p>
+            </div>
+        </div>
+        <HR>
+        <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+        <a href="https://wireframe.cc/apu97o">Desktop Wireframe</a> | <a href="https://wireframe.cc/uTvuOB">Tablet Wireframe</a> | <a href="https://wireframe.cc/Ewio5r">Phone Wireframe</a>  
+        <p>Last updated on <span id="currentDate"></span></p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/weatherAPI.js"></script>
+</body>
+</html>

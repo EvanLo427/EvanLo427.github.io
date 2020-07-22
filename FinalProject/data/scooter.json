@@ -1,0 +1,95 @@
+{
+  "scooter": [
+    {
+      "RentalType": "~Honda Metro Scooter",
+      "photo": "HondaMetroScooter.jpg",
+      "motto": "Quiet, economical, and super reliable!",
+      "MaxPersons": 1,
+      "RHalfDay": 20,
+      "RFullDay": 30,
+      "WHalfDay": 25,
+      "WFullDay": 35,
+      "events": [
+        "March 4: March to the Drum of Donuts",
+        "September 5 - 11: Founder Days",
+        "December 1 - 26: Christmas in the Heart"
+      ]
+    },
+    {
+      "RentalType": " ~Honda Dio Scooter",
+      "photo": "HondaDioScooter.jpg",
+      "motto": "This is Fish Heaven.",
+      "MaxPersons": 2,
+      "RHalfDay": 30,
+      "RFullDay": 40,
+      "WHalfDay": 45,
+      "WFullDay": 55,
+      "events": [
+        "April 1: How Big Was That Fish Day",
+        "May 15-30: Rush the Creek Days",
+        "July 24: Bear Lake Blunder Run",
+        "December 12: Light the Tree"
+      ]
+    },
+    {
+      "RentalType": "~Honda PCX150 Scooter",
+      "photo": "HondaPCX150Scooter.jpg",
+      "motto": "Green is our way of life.",
+      "MaxPersons": 2,
+      "RHalfDay": 40,
+      "RFullDay": 50,
+      "WHalfDay": 35,
+      "WFullDay": 45,
+      "events": [
+        "February 10-12: Greenbration",
+        "May 8 - 18: Greenville Founder Days",
+        "June 20: Verde and Valiant Day",
+        "November 15-16: Greensome Gathering"
+      ]
+    },
+    {
+      "RentalType": "Honda Pioneer ATV",
+      "photo": "HondaPioneerATV.jpg",
+      "motto": "Positive Placement in Placerton.",
+      "MaxPersons": 4,
+      "RHalfDay": 40,
+      "RFullDay": 50,
+      "WHalfDay": 45,
+      "WFullDay": 55,
+      "events": [
+        "July 4: A Blaze of Glory",
+        "October 20: Fall through Fall"
+      ]
+    },
+    {
+      "RentalType": "Jeep Wrangler - 4 door with a/c",
+      "photo": "JeepWrangler4.jpg",
+      "motto": "Home of Napoleon Dynamite.",
+      "MaxPersons": 5,
+      "RHalfDay": 50,
+      "RFullDay": 70,
+      "WHalfDay": 60,
+      "WFullDay": 80,
+      "events": [
+        "March 29: Work Creek Revival",
+        "July 8-12: Napoleon Dynamite Festival",
+        "November 2-4: Freedom Days"
+      ]
+    },
+    {
+      "RentalType": "Jeep Wrangler - 2 door",
+      "photo": "JeepWrangler2.jpg",
+      "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
+      "MaxPersons": 4,
+      "RHalfDay": 60,
+      "RFullDay": 85,
+      "WHalfDay": 70,
+      "WFullDay": 90,
+      "events": [
+        "February 29: Geyser Song Day",
+        "May 1-6: Days of May Celebration",
+        "October 15-16: Octoberfest"
+      ]
+    },
+  ]
+}

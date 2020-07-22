@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resevatioons | Your Journey</title>
+    <meta name="description" content="Your Journey, Scoots Rental, Cozumel Island">
+    <!--link to favicon-->
+    <link rel="Shortcut Icon" href="images/icon.png">
+    <!--link files in css folder-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png" alt="weather website logo" />
+    <div>
+        <h1>“Your Journey - Scoots Rental”</h1>
+        <h2>The Most Beautiful Island In The World</h2>
+    </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+          <li><a class="ham" href="#">&#9776; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li class="active"><a href="reservations.html">Reservations</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+
+<div class="content">
+    <main>
+      <div class="form-content">
+        <h1 class="align-center">Weather Report</h1>
+        <form id="SCForm" action="thanks.html" name="stormForm">
+          <h2 class="mb-5">Contact Information</h2>
+          <span class="ml-2 mr-5 d-flex flex-column">
+            <label for="fullName" class="mb-1">
+              Full Name
+              <span class="required"> *</span>
+            </label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              required
+              class="mb-3"
+              autofocus
+              pattern="^[a-zA-Z ]{5,}$"
+            />
+            <label for="email" class="mb-1">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@address.com"
+              id="email"
+              class="mb-3"
+            />
+            <label for="phoneNumber" class="mb-1"
+              >Phone Number<span class="required"> *</span></label
+            >
+            <input type="tel" name="phoneNumber" id="phoneNumber" class="mb-3" required />
+            <label for="zipCode" class="mb-1">Zip Code<span class="required"> *</span></label>
+            <input type="number" name="zipCode" id="zipCode" class="mb-3" required />
+          </span>
+
+          <h2 class="mb-5">Storm Details</h2>
+          <span class="ml-2 mr-5 d-flex flex-column">
+            <label for="stormDate" class="mb-1">Storm Date</label>
+            <input type="date" name="stormDate" id="stormDate" class="mb-3" />
+            <label for="stormRegion" class="mb-1">Storm Region</label>
+            <select name="stormRegion" id="stormRegion" class="mb-3">
+              <option disabled hidden selected value="">Select Region...</option>
+              <option value="preston">Preston</option>
+              <option value="sodaSprings">Soda Springs</option>
+              <option value="fishHaven">Fish Haven</option>
+            </select>
+            <label for="stormType" class="mb-1">Storm Type</label>
+            <input list="stormTypes" name="stormType" id="stormType" class="mb-3" />
+            <datalist id="stormTypes">
+              <option>Flash Flood</option>
+              <option>Hail</option>
+              <option>Hurricane</option>
+              <option>Thunderstorm</option>
+              <option>Tornado</option>
+            </datalist>
+            <label for="stormSeverity" class="mb-1">Storm Severity</label>
+            <div class="d-flex mb-3">
+              <input
+                type="range"
+                name="stormSeverity"
+                id="stormSeverity"
+                value="1"
+                min="1"
+                max="10"
+                onchange="updateRange(this.value);"
+              />
+              <span id="stormSeverityVal" class="ml-2"></span>
+            </div>
+            <label for="fullName" class="mb-1">Danger Present?</label>
+            <div class="d-flex mb-3">
+              Yes
+              <input type="radio" name="danger" value="Yes" class="mr-3 ml-1 my-auto" />
+              No
+              <input type="radio" name="danger" value="No" class="mr-3 ml-1 my-auto" />
+              Maybe
+              <input type="radio" name="danger" value="Maybe" class="mr-3 ml-1 my-auto" />
+            </div>
+            <label for="comments" class="mb-1">Comments</label>
+            <textarea name="comments" id="comments" class="mb-5"></textarea>
+          </span>
+          <button
+            type="submit"
+            name="submit"
+            id="submit"
+            form="SCForm"
+            value="submit"
+            class="mx-auto"
+          >
+            Submit
+          </button>
+        </form>
+        </div>
+    </main>
+
+    <footer>
+      <div class="contactinfo">
+          <img class="map" src="images/maps.png" alt="Preston Idaho on map">
+          <div class="contactmethods">
+          <h1>Contact Us</h1>
+          <p>&#x1F4CD; Cozumel Island, Mexico 77600</p>
+          <p>&#128222; 999.999.9999</p>
+          <p>&#x2709; YourJourney-ScootsRental@gmail.com</p>
+              <img src="images/facebook.png" alt="facebook">
+              <img src="images/pinterest.png" alt="pinterest">
+              <img src="images/twitter.png" alt="twitter">
+              <img src="images/whatsapp.png" alt="whatsapp">
+          </p>
+          </div>
+      </div>
+      <HR>
+      <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+      <a href="https://wireframe.cc/apu97o">Desktop Wireframe</a> | <a href="https://wireframe.cc/uTvuOB">Tablet Wireframe</a> | <a href="https://wireframe.cc/Ewio5r">Phone Wireframe</a>  
+      <p>Last updated on <span id="currentDate"></span></p>
+    </footer>
+  <script src="js/script.js"></script>
+  <script src="js/Preston.js"></script>
+  <script>
+    //form updateRange
+    function updateRange(val) {
+      document.getElementById('stormSeverityVal').innerHTML = val;
+    }
+
+    updateRange(1);
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/*tablet viewport*/
+@media only screen and (min-width: 38em) {
+  /*banner*/
+  .banner-1,
+  .banner-2{
+    font-size: 1.50em;
+    padding: 0.75em;
+  }
+  /*body*/
+  /*Header*/
+  header {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header h2 {
+      font-size: 1.5em;
+      text-align: left;
+  }
+
+  header img {
+    text-align: right;
+    height: 70%;
+    width: auto;
+  }
+
+  /*navigation*/
+  nav {
+    width:100%;
+  }
+  
+  nav ul li { 
+    float:left;
+    flex: 1 1 100%; 
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block; 
+    flex: 1 1 100%;
+  }
+
+  .navigation li:first-child{
+    display: none;
+  }
+  
+  /*main*/
+  #hero {
+    margin-bottom: 4%;
+  }
+
+  #hero-image {
+      margin-bottom: 6vh;
+  }
+
+  .forecast-table {
+      display: block;
+  }
+
+  .forecast-table table {
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .forecast-table img {
+      height: 75px;
+      width: 75px;
+      padding: 0 1em;
+  }
+
+  .town-events{
+    max-width: 70%;
+    text-align: center !important;
+  }
+
+  .town-article {
+      max-width: 75%;
+      margin: 0 auto;
+      padding: 2% 2%;
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+  }
+
+  .town-article img {
+      order: 2;
+      width: 100%;
+      height: 100%;
+      margin: auto 0;
+      object-fit: cover;
+  }
+
+  /*Index main*/
+  .index-main-article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .index-main-article img{
+      width: 100%;
+  }
+
+  .townDataJson box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 2%;
+  }
+
+  .townDataJson box:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .townDataJson box div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .townDataJson box img {
+    width: 50%;
+    height: auto;
+    margin: 0 0;
+  }
+
+  /*Weatherr Gallery*/
+  .Gallery-main{
+    margin: 5vh 0;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*Contact info*/
+  .contactinfo{
+    max-width: 100%;
+  }
+  .map{
+    display: flex;
+    max-width: 45%;
+    float: left;
+    margin-right: 2em;
+  }
+  /*footer*/
+}
