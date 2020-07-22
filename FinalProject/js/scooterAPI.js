@@ -1,5 +1,5 @@
 //W09 Assignment JSON
-const requestURL = 'https://evanlo427.github.io/FinalProject/data/scooter.json';
+const requestURL = 'https://evanlo427.github.io/FinalProject/data/scooterdata.json';
 
 fetch(requestURL)
     .then(function (response) {
@@ -7,10 +7,10 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         // console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const scooter = jsonObject['scooter'];
-        const myScooter = towns.filter(town => (RentalType.name == 'Honda Metro Scooter' || RentalType.name == 'Honda Dio Scooter' || RentalType.name == 'Honda PCX150 Scooter' || RentalType.name == 'Honda Pioneer ATV' || RentalType.name == 'Jeep Wrangler - 4 door with a/c' || RentalType.name == 'Jeep Wrangler - 2 door'));
+        const towns = jsonObject['towns'];
+        const myTowns = towns.filter(town => (town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven'));
 
-        myScooter.forEach(scooter => {
+        myTowns.forEach(town => {
 
             let card = document.createElement('box');
             let townDataJson = document.createElement('div');
@@ -21,11 +21,11 @@ fetch(requestURL)
             let townRain = document.createElement('p');
             let image = document.createElement('img');
 
-                scooterName.innerHTML = `${scooter.name}`;
-                scooterMotto.innerHTML = `${town.motto}`;
-                scooterYear.innerHTML = `Year Founded: ${town.yearFounded}`;
-                scooterPopulation.innerHTML = `Population: ${town.currentPopulation}`;
-                scooterRain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
+                townName.innerHTML = `${town.name}`;
+                townMotto.innerHTML = `${town.motto}`;
+                townYear.innerHTML = `Year Founded: ${town.yearFounded}`;
+                townPopulation.innerHTML = `Population: ${town.currentPopulation}`;
+                townRain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
 
                     card.appendChild(townDataJson)
                     townDataJson.appendChild(townName);
