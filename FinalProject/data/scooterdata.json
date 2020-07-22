@@ -1,7 +1,7 @@
 {
-  "scooter": [
+  "scooters": [
     {
-      "RentalType": "Honda Metro Scooter",
+      "name": "Honda Metro Scooter",
       "photo": "HondaMetroScooter.jpg",
       "motto": "Quiet, economical, and super reliable!",
       "MaxPersons": 1,
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "RentalType": "Honda Dio Scooter",
+      "name": "Honda Dio Scooter",
       "photo": "HondaDioScooter.jpg",
       "motto": "This is Fish Heaven.",
       "MaxPersons": 2,
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "RentalType": "Honda PCX150 Scooter",
+      "name": "Honda PCX150 Scooter",
       "photo": "HondaPCX150Scooter.jpg",
       "motto": "Green is our way of life.",
       "MaxPersons": 2,
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "RentalType": "Honda Pioneer ATV",
+      "name": "Honda Pioneer ATV",
       "photo": "HondaPioneerATV.jpg",
       "motto": "Positive Placement in Placerton.",
       "MaxPersons": 4,
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "RentalType": "Jeep Wrangler - 4 door with a/c",
+      "name": "Jeep Wrangler - 4 door with a/c",
       "photo": "JeepWrangler4.jpg",
       "motto": "Home of Napoleon Dynamite.",
       "MaxPersons": 5,
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "RentalType": "Jeep Wrangler - 2 door",
+      "name": "Jeep Wrangler - 2 door",
       "photo": "JeepWrangler2.jpg",
       "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
       "MaxPersons": 4,

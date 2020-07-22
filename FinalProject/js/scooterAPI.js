@@ -7,18 +7,18 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         // console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const towns = jsonObject['towns'];
-        const myTowns = towns.filter(town => (town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven'));
+        const scooters = jsonObject['scooters'];
+        const myscooters = scooters.filter(scooter => (scooter.name == 'Preston' || scooter.name == 'Soda Springs' || scooter.name == 'Fish Haven'));
 
-        myTowns.forEach(town => {
+        myscooter.forEach(town => {
 
             let card = document.createElement('box');
-            let townDataJson = document.createElement('div');
-            let townName = document.createElement('h2');
-            let townMotto = document.createElement('h3');
-            let townYear = document.createElement('p');
-            let townPopulation = document.createElement('p');
-            let townRain = document.createElement('p');
+            let scooterDataJson = document.createElement('div');
+            let scooterName = document.createElement('h2');
+            let scooterMotto = document.createElement('h3');
+            let scooterYear = document.createElement('p');
+            let scooterPopulation = document.createElement('p');
+            let scooterRain = document.createElement('p');
             let image = document.createElement('img');
 
                 townName.innerHTML = `${town.name}`;
@@ -27,16 +27,16 @@ fetch(requestURL)
                 townPopulation.innerHTML = `Population: ${town.currentPopulation}`;
                 townRain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
 
-                    card.appendChild(townDataJson)
-                    townDataJson.appendChild(townName);
-                    townDataJson.appendChild(townMotto);
-                    townDataJson.appendChild(townYear);
-                    townDataJson.appendChild(townPopulation);
-                    townDataJson.appendChild(townRain);
+                    card.appendChild(scooterDataJson)
+                    scooterDataJson.appendChild(townName);
+                    scooterDataJson.appendChild(townMotto);
+                    scooterDataJson.appendChild(townYear);
+                    scooterDataJson.appendChild(townPopulation);
+                    scooterDataJson.appendChild(townRain);
                     image.setAttribute('src', `images/${town.photo}`);
                     image.setAttribute('alt', `${town.name}: ${town.motto}`);
                     card.appendChild(image);
 
-            document.querySelector('div.townDataJson').appendChild(card);
+            document.querySelector('div.scooterDataJson').appendChild(card);
         });
     });
