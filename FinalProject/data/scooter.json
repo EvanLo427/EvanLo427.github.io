@@ -1,7 +1,7 @@
 {
   "scooter": [
     {
-      "RentalType": "~Honda Metro Scooter",
+      "RentalType": "Honda Metro Scooter",
       "photo": "HondaMetroScooter.jpg",
       "motto": "Quiet, economical, and super reliable!",
       "MaxPersons": 1,
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "RentalType": " ~Honda Dio Scooter",
+      "RentalType": "Honda Dio Scooter",
       "photo": "HondaDioScooter.jpg",
       "motto": "This is Fish Heaven.",
       "MaxPersons": 2,
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "RentalType": "~Honda PCX150 Scooter",
+      "RentalType": "Honda PCX150 Scooter",
       "photo": "HondaPCX150Scooter.jpg",
       "motto": "Green is our way of life.",
       "MaxPersons": 2,
