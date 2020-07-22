@@ -109,7 +109,7 @@
       width: 100%;
   }
 
-  .townDataJson box {
+  .scooterDataJson box {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -117,17 +117,17 @@
     margin-bottom: 2%;
   }
 
-  .townDataJson box:nth-child(odd) {
+  .scooterDataJson box:nth-child(odd) {
     flex-direction: row-reverse;
   }
 
-  .townDataJson box div:first-of-type {
+  .scooterDataJson box div:first-of-type {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
 
-  .townDataJson box img {
+  .scooterDataJson box img {
     width: 50%;
     height: auto;
     margin: 0 0;
