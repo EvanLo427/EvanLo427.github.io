@@ -559,7 +559,6 @@ main li {
 
 /*Index main*/
 .Rental-info {
-  background-color: fffff;
   box-shadow: 0 0 1em;
   border: 5px white;
   border-style: solid;
@@ -578,7 +577,6 @@ main li {
   justify-content: center; }
 
 .scooterDataJson box {
-  background-color: fffff;
   box-shadow: 0 0 1em;
   border: 5px white;
   border-style: solid;
@@ -617,33 +615,8 @@ main li {
   border: 5px white;
   border-style: solid; }
 
-/*Weather Gallery*/
-.Gallery-main {
-  font-family: 'Roboto Condensed', cursive;
-  font-size: 24px;
-  margin: 5vh 4vw 5vh 4vw;
-  display: grid;
-  grid-template-columns: 1fr; }
-
-.Gallery-picture {
-  text-align: center;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
-  margin: 5%;
-  transition: .1s; }
-
-.Gallery-picture p {
-  padding: 8%;
-  font-size: smaller; }
-
-.Gallery-picture img {
-  min-height: 210px;
-  min-width: 250px;
-  height: 100%;
-  width: 100%; }
-
 /*Contact info*/
 .contactinfo {
-  background-color: fffff;
   color: black;
   padding: 2em;
   display: flex;
@@ -655,7 +628,6 @@ main li {
   display: block; }
 
 .Contact-info {
-  background-color: fffff;
   box-shadow: 0 0 1em;
   border: 5px white;
   border-style: solid;
@@ -757,24 +729,6 @@ footer a {
     width: 75px;
     padding: 0 1em; }
 
-  .town-events {
-    max-width: 70%;
-    text-align: center !important; }
-
-  .town-article {
-    max-width: 75%;
-    margin: 0 auto;
-    padding: 2% 2%;
-    display: grid;
-    grid-template-columns: 2fr 2fr; }
-
-  .town-article img {
-    order: 2;
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
-    object-fit: cover; }
-
   /*Index main*/
   .Rental-info {
     margin: 0auto;
@@ -863,18 +817,6 @@ footer a {
   .forecast-table table {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-  .town-article {
-    margin: 0 auto;
-    padding: 2% 2%;
-    display: grid;
-    grid-template-columns: 2fr 2fr; }
-
-  .town-article img {
-    order: 2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-
   /*Index main*/
   .scooterDataJson {
     display: grid;
@@ -894,39 +836,17 @@ footer a {
   .scooterDataJson box img {
     width: 100%; }
 
-  /*Weatherr Gallery*/
-  .Gallery-main {
-    grid-template-columns: 1fr 1fr 1fr; }
-
-  .Gallery-picture {
-    margin: 4%; }
-
-  .Gallery-picture p {
-    padding: 5%; }
-
-  .Gallery-main picture:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
-    transition: .1s; }
-
   /*Contact info*/
-  .contactmethods img {
-    max-width: 31px; }
-
-  .map {
-    display: flex;
-    max-width: 50%;
-    float: left;
-    margin-right: 2em; }
-
   #contact-info-page {
     max-width: 90%;
     margin: auto; }
 
   .Contact-info-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    max-width: 90%; }
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 10%;
+    margin-top: 5%; }
 
   /*footer*/ }
 /* end of media query */

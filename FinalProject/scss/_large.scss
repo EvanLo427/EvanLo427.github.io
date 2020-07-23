@@ -55,20 +55,6 @@
     .forecast-table table {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
-    .town-article {
-        margin: 0 auto;
-        padding: 2% 2%;
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    }
-
-    .town-article img {
-        order: 2;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
     
     /*Index main*/
     .scooterDataJson {
@@ -93,44 +79,19 @@
         width: 100%;
       }
 
-    /*Weatherr Gallery*/
-    .Gallery-main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .Gallery-picture{
-        margin: 4%;
-    }
-
-    .Gallery-picture p{
-        padding: 5%;
-    }
-
-    .Gallery-main picture:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
-        transition: .1s;
-    }
-
     /*Contact info*/
-    .contactmethods img{
-        max-width: 31px;
-    }
-
-    .map{
-        display: flex;
-        max-width: 50%;
-        float: left;
-        margin-right: 2em;
-    }
     #contact-info-page{
         max-width: 90%;
         margin: auto;
     }
+
     .Contact-info-grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: auto;
-        max-width: 90%;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        grid-gap: 10%;
+        margin-top: 5%;
     }
+    
     /*footer*/
 }
