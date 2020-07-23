@@ -77,9 +77,11 @@
   }
 
   .town-article {
+      margin-top: 2%;
       padding: 2% 2%;
       display: grid;
       grid-template-columns: 2fr 2fr;
+      grid-gap: 5%;
   }
 
   .town-article img {

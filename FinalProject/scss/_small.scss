@@ -205,21 +205,13 @@ main li{
     text-align: center;
 }
 
-.town-events{
-    max-width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: whitesmoke;
-    padding: 5%;
-    text-align: left;
-    margin: auto;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 2%;
-}
-
 .town-article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: whitesmoke;
     padding: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2%;
 }
 
 .article-content {
