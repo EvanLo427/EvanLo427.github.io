@@ -237,7 +237,7 @@ main li{
 
 /*Index main*/
 .Rental-info{
-    background-color: #fffff;
+    background-color: fffff;
     box-shadow: 0 0 1em;
     border: 5px white;
     border-style: solid;
@@ -346,6 +346,18 @@ main li{
 
 .contactinfo{
     display: block;
+}
+
+.Contact-info{
+    background-color: fffff;
+    box-shadow: 0 0 1em;
+    border: 5px white;
+    border-style: solid;
+    padding: 1em; 
+    color: black;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .contactmethods{

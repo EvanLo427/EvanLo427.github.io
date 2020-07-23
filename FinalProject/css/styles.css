@@ -559,7 +559,7 @@ main li {
 
 /*Index main*/
 .Rental-info {
-  background-color: #fffff;
+  background-color: fffff;
   box-shadow: 0 0 1em;
   border: 5px white;
   border-style: solid;
@@ -653,6 +653,17 @@ main li {
 
 .contactinfo {
   display: block; }
+
+.Contact-info {
+  background-color: fffff;
+  box-shadow: 0 0 1em;
+  border: 5px white;
+  border-style: solid;
+  padding: 1em;
+  color: black;
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 2%; }
 
 .contactmethods {
   max-width: 60%;
@@ -796,6 +807,21 @@ footer a {
     grid-template-columns: 1fr 1fr; }
 
   /*Contact info*/
+  .Contact-info {
+    background-color: fffff;
+    box-shadow: 0 0 1em;
+    border: 5px white;
+    border-style: solid;
+    padding: 3em;
+    color: black;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
   .contactinfo {
     display: flex;
     max-width: 100%; }
@@ -904,6 +930,23 @@ footer a {
     max-width: 50%;
     float: left;
     margin-right: 2em; }
+
+  .Contact-info {
+    background-color: fffff;
+    box-shadow: 0 0 1em;
+    border: 5px white;
+    border-style: solid;
+    padding: 3em;
+    color: black;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%; }
+
+  .Contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0; }
 
   /*footer*/ }
 /* end of media query */
