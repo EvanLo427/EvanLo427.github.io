@@ -535,6 +535,16 @@ main li {
 .forecast-table td {
   text-align: center; }
 
+.town-events {
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: whitesmoke;
+  padding: 5%;
+  text-align: left;
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 2%; }
+
 .town-article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: whitesmoke;
@@ -557,7 +567,7 @@ main li {
 .town-article a {
   color: black !important; }
 
-/*Index main*/
+/*scooterDataJson*/
 .Rental-info {
   box-shadow: 0 0 1em;
   border: 5px white;
@@ -729,7 +739,19 @@ footer a {
     width: 75px;
     padding: 0 1em; }
 
-  /*Index main*/
+  .town-article {
+    padding: 2% 2%;
+    display: grid;
+    grid-template-columns: 2fr 2fr; }
+
+  .town-article img {
+    order: 2;
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    object-fit: cover; }
+
+  /*scooterDataJson*/
   .Rental-info {
     margin: 0auto;
     margin-top: 2%;
@@ -756,11 +778,6 @@ footer a {
     width: 50%;
     height: auto;
     margin: 0 0; }
-
-  /*Weatherr Gallery*/
-  .Gallery-main {
-    margin: 5vh 0;
-    grid-template-columns: 1fr 1fr; }
 
   /*Contact info*/
   .contactinfo {
@@ -817,7 +834,7 @@ footer a {
   .forecast-table table {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-  /*Index main*/
+  /*scooterDataJson*/
   .scooterDataJson {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
