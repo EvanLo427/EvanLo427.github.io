@@ -171,7 +171,7 @@ main li{
 }
 
 .forecast-table {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -353,11 +353,20 @@ main li{
     box-shadow: 0 0 1em;
     border: 5px white;
     border-style: solid;
-    padding: 1em; 
-    color: black;
-    text-align: left;
+    color: black;   
     margin-top: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+.Contact-us-form{
+    max-width: 95%;
+    margin: auto;
+}
+
+.Contact-info-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
 }
 
 .contactmethods{

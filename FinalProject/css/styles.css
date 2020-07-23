@@ -507,7 +507,7 @@ main li {
   margin: 0; }
 
 .forecast-table {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr; }
 
 .forecast-table table {
@@ -659,11 +659,18 @@ main li {
   box-shadow: 0 0 1em;
   border: 5px white;
   border-style: solid;
-  padding: 1em;
   color: black;
-  text-align: left;
   margin-top: 5%;
-  margin-bottom: 2%; }
+  margin-bottom: 5%; }
+
+.Contact-us-form {
+  max-width: 95%;
+  margin: auto; }
+
+.Contact-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto; }
 
 .contactmethods {
   max-width: 60%;
@@ -931,22 +938,12 @@ footer a {
     float: left;
     margin-right: 2em; }
 
-  .Contact-info {
-    background-color: fffff;
-    box-shadow: 0 0 1em;
-    border: 5px white;
-    border-style: solid;
-    padding: 3em;
-    color: black;
-    text-align: left;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-left: 5%; }
-
   .Contact-info-grid {
+    max-width: 100%;
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
-    margin: 0 0; }
+    margin-bottom: 5%; }
 
   /*footer*/ }
 /* end of media query */

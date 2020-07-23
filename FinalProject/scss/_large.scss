@@ -123,23 +123,12 @@
         margin-right: 2em;
     }
 
-    .Contact-info{
-        background-color: fffff;
-        box-shadow: 0 0 1em;
-        border: 5px white;
-        border-style: solid;
-        padding: 3em; 
-        color: black;
-        text-align: left;
-        margin-top: 5%;
-        margin-bottom: 2%;
-        margin-left: 5%;
-    }
     .Contact-info-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 0 0;
+        max-width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5%;
     }
-    
     /*footer*/
 }
