@@ -17,7 +17,8 @@
         font-size: 3em;
     }
     
-    header img {
+    header img,
+    header a{
         text-align: right;
         height: 70%;
         width: auto;
@@ -117,7 +118,7 @@
 
     .map{
         display: flex;
-        max-width: 25%;
+        max-width: 50%;
         float: left;
         margin-right: 2em;
     }

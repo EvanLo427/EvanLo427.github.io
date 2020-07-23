@@ -9,10 +9,7 @@
       "reservationFull": 30,
       "walkinHalf": 25,
       "walkinFull": 35,
-      "events": [
-        "March 4: March to the Drum of Donuts",
-        "September 5 - 11: Founder Days",
-        "December 1 - 26: Christmas in the Heart"
+      "": [
       ]
     },
     {
@@ -24,11 +21,7 @@
       "reservationFull": 40,
       "walkinHalf": 45,
       "walkinFull": 55,
-      "events": [
-        "April 1: How Big Was That Fish Day",
-        "May 15-30: Rush the Creek Days",
-        "July 24: Bear Lake Blunder Run",
-        "December 12: Light the Tree"
+      "": [
       ]
     },
     {
@@ -40,11 +33,7 @@
       "reservationFull": 50,
       "walkinHalf": 35,
       "walkinFull": 45,
-      "events": [
-        "February 10-12: Greenbration",
-        "May 8 - 18: Greenville Founder Days",
-        "June 20: Verde and Valiant Day",
-        "November 15-16: Greensome Gathering"
+      "": [
       ]
     },
     {
@@ -56,9 +45,7 @@
       "reservationFull": 50,
       "walkinHalf": 45,
       "walkinFull": 55,
-      "events": [
-        "July 4: A Blaze of Glory",
-        "October 20: Fall through Fall"
+      "": [
       ]
     },
     {
@@ -70,10 +57,7 @@
       "reservationFull": 70,
       "walkinHalf": 60,
       "walkinFull": 80,
-      "events": [
-        "March 29: Work Creek Revival",
-        "July 8-12: Napoleon Dynamite Festival",
-        "November 2-4: Freedom Days"
+      "": [
       ]
     },
     {
@@ -85,10 +69,7 @@
       "reservationFull": 85,
       "walkinHalf": 70,
       "walkinFull": 90,
-      "events": [
-        "February 29: Geyser Song Day",
-        "May 1-6: Days of May Celebration",
-        "October 15-16: Octoberfest"
+      "": [
       ]
     }
   ]

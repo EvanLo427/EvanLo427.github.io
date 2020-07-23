@@ -1,4 +1,4 @@
-//W09 Assignment JSON
+//Rentals JSON
 const requestURL = '/FinalProject/data/scooterdata.json';
 
 fetch(requestURL)

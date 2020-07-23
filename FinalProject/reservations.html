@@ -34,115 +34,96 @@
 
 <div class="content">
     <main>
-      <div class="form-content">
-        <h1 class="align-center">Weather Report</h1>
-        <form id="SCForm" action="thanks.html" name="stormForm">
-          <h2 class="mb-5">Contact Information</h2>
-          <span class="ml-2 mr-5 d-flex flex-column">
-            <label for="fullName" class="mb-1">
-              Full Name
-              <span class="required"> *</span>
+      <section>
+        <h2>Scoots Rental Form</h2>
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <h2>Tell us about yourself</h2>
+            <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z ]{5,}" required=""></label>
+            <label class="top">Email<input type="email" name="email" placeholder="you@somehwere.com"></label>
+            <label class="top">Phone<input type="tel" name="phone" placeholder="555-555-5555" required=""></label>
+            <label class="top">Home state or country
+              <select name="stormType">
+                <option value="">Please Select</option>
+                <option value="blizzard">North America</option>
+                <option value="dust">South America</option>
+                <option value="hail">Asia</option>
+                <option value="ice">Europe</option>
+                <option value="rain">Australia</option>
+              </select>
             </label>
-            <input
-              type="text"
-              name="fullName"
-              id="fullName"
-              required
-              class="mb-3"
-              autofocus
-              pattern="^[a-zA-Z ]{5,}$"
-            />
-            <label for="email" class="mb-1">Email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="email@address.com"
-              id="email"
-              class="mb-3"
-            />
-            <label for="phoneNumber" class="mb-1"
-              >Phone Number<span class="required"> *</span></label
-            >
-            <input type="tel" name="phoneNumber" id="phoneNumber" class="mb-3" required />
-            <label for="zipCode" class="mb-1">Zip Code<span class="required"> *</span></label>
-            <input type="number" name="zipCode" id="zipCode" class="mb-3" required />
-          </span>
-
-          <h2 class="mb-5">Storm Details</h2>
-          <span class="ml-2 mr-5 d-flex flex-column">
-            <label for="stormDate" class="mb-1">Storm Date</label>
-            <input type="date" name="stormDate" id="stormDate" class="mb-3" />
-            <label for="stormRegion" class="mb-1">Storm Region</label>
-            <select name="stormRegion" id="stormRegion" class="mb-3">
-              <option disabled hidden selected value="">Select Region...</option>
-              <option value="preston">Preston</option>
-              <option value="sodaSprings">Soda Springs</option>
-              <option value="fishHaven">Fish Haven</option>
-            </select>
-            <label for="stormType" class="mb-1">Storm Type</label>
-            <input list="stormTypes" name="stormType" id="stormType" class="mb-3" />
-            <datalist id="stormTypes">
-              <option>Flash Flood</option>
-              <option>Hail</option>
-              <option>Hurricane</option>
-              <option>Thunderstorm</option>
-              <option>Tornado</option>
-            </datalist>
-            <label for="stormSeverity" class="mb-1">Storm Severity</label>
-            <div class="d-flex mb-3">
-              <input
-                type="range"
-                name="stormSeverity"
-                id="stormSeverity"
-                value="1"
-                min="1"
-                max="10"
-                onchange="updateRange(this.value);"
-              />
-              <span id="stormSeverityVal" class="ml-2"></span>
+          </fieldset>
+      
+          <fieldset>
+            <h2>Select your date and vehicle</h2>
+            <label class="top">Date of rental pickup<input type="date" name="completeDate"></label>
+            <label class="top">Time of rental pickup<input type="time" name="startTime"></label>
+            <label class="top">Vehicle type
+              <select name="stormType">
+                <option value="">Please Select</option>
+                <option value="blizzard">Honda Metro Scooter</option>
+                <option value="dust">Honda Dio Scooter</option>
+                <option value="hail">Honda PCX150 Scooter</option>
+                <option value="ice">Honda Pioneer ATV</option>
+                <option value="rain">Jeep Wrangler - 2 door</option>
+                <option value="tornado">Jeep Wrangler - 4 door</option>
+              </select>
+            </label>
+            <div class="slidercontainer">
+              <p>Number of passengers</p>
+              <label class="slider" for="rating">People: &nbsp;&nbsp;&nbsp;
+                <input type="range" id="rating" value="2" min="1" max="5" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+              </label>
+      
+              <datalist id="tickmarks">
+                <option value="0">
+                </option><option value="1">
+                </option><option value="2">
+                </option><option value="3">
+                </option><option value="4">
+                </option><option value="5">
+              </option></datalist>
             </div>
-            <label for="fullName" class="mb-1">Danger Present?</label>
-            <div class="d-flex mb-3">
-              Yes
-              <input type="radio" name="danger" value="Yes" class="mr-3 ml-1 my-auto" />
-              No
-              <input type="radio" name="danger" value="No" class="mr-3 ml-1 my-auto" />
-              Maybe
-              <input type="radio" name="danger" value="Maybe" class="mr-3 ml-1 my-auto" />
-            </div>
-            <label for="comments" class="mb-1">Comments</label>
-            <textarea name="comments" id="comments" class="mb-5"></textarea>
-          </span>
-          <button
-            type="submit"
-            name="submit"
-            id="submit"
-            form="SCForm"
-            value="submit"
-            class="mx-auto"
-          >
-            Submit
-          </button>
+      
+            <label class="top">Pick up location
+              <select name="stormRegion">
+                <option value="">Please Select Location</option>
+                <option value="fishHaven">Playa del Carmen</option>
+                <option value="preston">Puerta Maya</option>
+                <option value="sodaSprings">Deliver it to my location $5</option>
+              </select>
+            </label>
+            <div class="threatLevel">Driver experience with the Island</div>
+            <label class="sbs"><input type="radio" name="audience" value="beginner"> Very familliar</label>
+            <label class="sbs"><input type="radio" name="audience" value="beginner"> Somewhat familliar</label>
+            <label class="sbs"><input type="radio" name="audience" value="beginner"> Add a gps to my order $5</label>
+          </fieldset>
+      
+          <fieldset>
+            <h2>Do you have any question?</h2>
+            <label class="top"><textarea rows="5" cols="50" placeholder="Enter text here"></textarea></label>
+            <input style="margin: auto; margin-top: 2%;" type="submit" value="Submit Reservations" class="submitBtn">
+          </fieldset>
         </form>
-        </div>
-    </main>
+      </section>
+      </main>
 
-<footer>
-  <div class="contactinfo">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239239.16211757337!2d-87.1068581761754!3d20.46059634830222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cc34646e0d%3A0x50a5f2be21192a80!2sCentro%2C%2077600%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1595449038266!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="contactmethods">
-      <h1>Contact Us</h1>
-      <p>&#x1F4CD; Cozumel Island, Mexico 77600</p>
-      <p>&#128222; 999.999.9999</p>
-      <p>&#x2709; YourJourney-ScootsRental@gmail.com</p>
-          <img src="images/facebook.png" alt="facebook">
-          <img src="images/pinterest.png" alt="pinterest">
-          <img src="images/twitter.png" alt="twitter">
-          <img src="images/whatsapp.png" alt="whatsapp">
-      </p>
+    <footer>
+      <div class="contactinfo">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239239.16211757337!2d-87.1068581761754!3d20.46059634830222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cc34646e0d%3A0x50a5f2be21192a80!2sCentro%2C%2077600%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1595449038266!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="contactmethods">
+          <h1>Contact Us</h1>
+          <p>&#x1F4CD; Cozumel Island, Mexico 77600</p>
+          <p>&#128222; 999.999.9999</p>
+          <p>&#x2709; YourJourney-ScootsRental@gmail.com</p>
+              <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+              <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="twitter"></a>
+              <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram"></a>
+          </p>
+          </div>
       </div>
-  </div>
-  <HR>
+      <HR>
   <p>&copy; <span id="year"></span> | Evan Lo | Taiwan | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
   <a href="https://wireframe.cc/apu97o">Desktop Wireframe</a> | <a href="https://wireframe.cc/uTvuOB">Tablet Wireframe</a> | <a href="https://wireframe.cc/Ewio5r">Phone Wireframe</a>  
   <p>Last updated on <span id="currentDate"></span></p>
@@ -150,11 +131,12 @@
   <script src="js/Preston.js"></script>
   <script>
     //form updateRange
-    function updateRange(val) {
-      document.getElementById('stormSeverityVal').innerHTML = val;
-    }
-
-    updateRange(1);
+    function toggleMenu() {
+  document.getElementById("primaryNav").getElementById.toggle("hide");
+  }
+  function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+  }
   </script>
 </body>
 </html>

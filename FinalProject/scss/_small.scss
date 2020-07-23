@@ -62,7 +62,8 @@ header h2 {
     font-size: 0.9em;
 }
 
-header img {
+header img,
+header a{
     height: 50%;
     width: auto;
     margin: auto;
@@ -119,16 +120,15 @@ main {
     margin: 0 4vw 5vh 4vw;
 }
 
-main h1,
-main h2,
-main h3,
-main h4 {
-    text-align: center;
+main h2, {
+    font-family: 'Fredoka One', cursive;
     font-size: 2em;
 }
 
-main p{
+main p,
+main li{
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 }
 
 #hero {
@@ -205,16 +205,6 @@ main p{
     text-align: center;
 }
 
-.town-events{
-    max-width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: whitesmoke;
-    padding: 5%;
-    text-align: left;
-    margin: auto;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 2%;
-}
 
 .town-article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -246,7 +236,7 @@ main p{
 
 
 /*Index main*/
-.index-main-article{
+.Rental-info{
     background-color: #fffff;
     box-shadow: 0 0 1em;
     border: 5px white;
@@ -258,19 +248,8 @@ main p{
     margin-bottom: 2%;
 }
 
-.index-main-article h2{
+.Rental-info h2{
     text-align: center;
-}
-
-.index-main-article img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-}
-
-.index-main-article a{
-    color: black !important;
 }
 
 .scooterDataJson {
@@ -280,7 +259,7 @@ main p{
   }
 
   .scooterDataJson box{
-    background-color: #fffff;
+    background-color: fffff;
     box-shadow: 0 0 1em;
     border: 5px white;
     border-style: solid;
@@ -356,7 +335,7 @@ main p{
 
 /*Contact info*/
 .contactinfo{
-    background-color: #fffff;
+    background-color: fffff;
     color: black;
     padding: 2em;
     display: flex;
@@ -365,8 +344,8 @@ main p{
     align-content: center;
 }
 
-.map {
-    display: none;
+.contactinfo{
+    display: block;
 }
 
 .contactmethods{

@@ -22,7 +22,8 @@
       text-align: left;
   }
 
-  header img {
+  header img,
+  header a{
     text-align: right;
     height: 70%;
     width: auto;
@@ -97,16 +98,10 @@
   }
 
   /*Index main*/
-  .index-main-article{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
+  .Rental-info{
+    margin: 0auto;
     margin-top: 2%;
     margin-bottom: 2%;
-  }
-
-  .index-main-article img{
-      width: 100%;
   }
 
   .scooterDataJson box {
@@ -144,13 +139,9 @@
 
   /*Contact info*/
   .contactinfo{
+    display: flex;
     max-width: 100%;
   }
-  .map{
-    display: flex;
-    max-width: 45%;
-    float: left;
-    margin-right: 2em;
-  }
+
   /*footer*/
 }
