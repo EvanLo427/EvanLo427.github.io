@@ -16,26 +16,29 @@ fetch(requestURL)
             let scooterDataJson = document.createElement('div');
             let scooterName = document.createElement('h2');
             let scooterMotto = document.createElement('h3');
-            let scooterYear = document.createElement('p');
-            let scooterPopulation = document.createElement('p');
-            let scooterRain = document.createElement('p');
-            let scooterBain = document.createElement('p');
+            let scooterRhalf = document.createElement('p');
+            let scooterRfull = document.createElement('p');
+            let scooterWhalf = document.createElement('p');
+            let scooterWfull = document.createElement('p');
+            let scooterPerson = document.createElement('h3');
             let image = document.createElement('img');
 
                 scooterName.innerHTML = `${scooter.name}`;
                 scooterMotto.innerHTML = `${scooter.motto}`;
-                scooterYear.innerHTML = `Reservation Half Day(3hrs): $ ${scooter.reservationHalf}`;
-                scooterPopulation.innerHTML = `Reservation Full Day: $ ${scooter.reservationFull}`;
-                scooterRain.innerHTML = `Walk-In Half Day(3hrs): $ ${scooter.walkinHalf}`;
-                scooterBain.innerHTML = `Walk-In Full Day: $ ${scooter.walkinFull}`;
+                scooterRhalf.innerHTML = `Reservation Half Day(3hrs): $ ${scooter.reservationHalf}`;
+                scooterRfull.innerHTML = `Reservation Full Day: $ ${scooter.reservationFull}`;
+                scooterWhalf.innerHTML = `Walk-In Half Day(3hrs): $ ${scooter.walkinHalf}`;
+                scooterWfull.innerHTML = `Walk-In Full Day: $ ${scooter.walkinFull}`;
+                scooterPerson.innerHTML = `Max. Persons: ${scooter.maxPersons}`;
 
                     card.appendChild(scooterDataJson)
                     scooterDataJson.appendChild(scooterName);
                     scooterDataJson.appendChild(scooterMotto);
-                    scooterDataJson.appendChild(scooterYear);
-                    scooterDataJson.appendChild(scooterPopulation);
-                    scooterDataJson.appendChild(scooterRain);
-                    scooterDataJson.appendChild(scooterBain);
+                    scooterDataJson.appendChild(scooterRhalf);
+                    scooterDataJson.appendChild(scooterRfull);
+                    scooterDataJson.appendChild(scooterWhalf);
+                    scooterDataJson.appendChild(scooterWfull);
+                    scooterDataJson.appendChild(scooterPerson);
                     image.setAttribute('src', `images/${scooter.photo}`);
                     image.setAttribute('alt', `${scooter.name}: ${scooter.motto}`);
                     card.appendChild(image);

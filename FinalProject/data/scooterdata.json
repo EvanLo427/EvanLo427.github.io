@@ -3,7 +3,8 @@
     {
       "name": "Honda Metro Scooter",
       "photo": "HondaMetroScooter.jpg",
-      "motto": "Where you will grow!",
+      "motto": "Quiet, economical, and super reliable.",
+      "maxPersons": 1,
       "reservationHalf": 20,
       "reservationFull": 30,
       "walkinHalf": 25,
@@ -17,7 +18,8 @@
     {
       "name": "Honda Dio Scooter",
       "photo": "HondaDioScooter.jpg",
-      "motto": "This is Fish Heaven.",
+      "motto": "Spacious, comfortable and safe.",
+      "maxPersons": 2,
       "reservationHalf": 30,
       "reservationFull": 40,
       "walkinHalf": 45,
@@ -32,7 +34,8 @@
     {
       "name": "Honda PCX150 Scooter",
       "photo": "HondaPCX150Scooter.jpg",
-      "motto": "Green is our way of life.",
+      "motto": "Special edition, comfort and honor.",
+      "maxPersons": 2,
       "reservationHalf": 40,
       "reservationFull": 50,
       "walkinHalf": 35,
@@ -47,7 +50,8 @@
     {
       "name": "Honda Pioneer ATV",
       "photo": "HondaPioneerATV.jpg",
-      "motto": "Positive Placement in Placerton.",
+      "motto": "Adventure, racing, off-road.",
+      "maxPersons": 4,
       "reservationHalf": 40,
       "reservationFull": 50,
       "walkinHalf": 45,
@@ -60,7 +64,8 @@
     {
       "name": "Jeep Wrangler - 4 door",
       "photo": "JeepWrangler4.jpg",
-      "motto": "Home of Napoleon Dynamite.",
+      "motto": "classic style and modern design with A/C.",
+      "maxPersons": 5,
       "reservationHalf": 50,
       "reservationFull": 70,
       "walkinHalf": 60,
@@ -74,7 +79,8 @@
     {
       "name": "Jeep Wrangler - 2 door",
       "photo": "JeepWrangler2.jpg",
-      "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
+      "motto": "classic style and modern design.",
+      "maxPersons": 4,
       "reservationHalf": 60,
       "reservationFull": 85,
       "walkinHalf": 70,
