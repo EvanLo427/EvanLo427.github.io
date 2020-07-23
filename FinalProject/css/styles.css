@@ -373,6 +373,7 @@ form label.top input:required:valid {
   text-align: center;
   font-size: large; }
 
+.town-article button,
 .banner-1 button,
 .banner-2 button {
   line-height: 2em;
