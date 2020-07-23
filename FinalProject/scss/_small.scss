@@ -273,13 +273,13 @@ main p{
     color: black !important;
 }
 
-.scooterDataJson {
+.townDataJson {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
   }
 
-  .scooterDataJson box{
+  .townDataJson box{
     background-color: #fffff;
     box-shadow: 0 0 1em;
     border: 5px white;
@@ -287,36 +287,37 @@ main p{
     margin-bottom: 5%;
   }
   
-  .scooterDataJson h2{
+  .townDataJson h2{
     color: black;
     font-size: 2em;
   }
 
-  .scooterDataJson h3{
+  .townDataJson h3{
     color: black;
     font-size: 1em;
   }
-  .scooterDataJson p{
+  .townDataJson p{
     color: black;
   }
   
-  .scooterDataJson h2 {
+  .townDataJson h2 {
+    font-size: 40px;
     border-bottom: 1px solid black;
     color: black;
   }
   
-  .scooterDataJson p {
+  .townDataJson p {
     margin: 0em 0em;
-    text-align: center;
+    text-align: left;
   }
   
-  .scooterDataJson div {
+  .townDataJson div {
     padding: 1em 1em;
     display: flex;
     flex-direction: column;
   }
   
-  .scooterDataJson img {
+  .townDataJson img {
     width: 90%;
     margin: 0 auto;
     text-align: center;
