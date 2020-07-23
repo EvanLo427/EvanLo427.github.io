@@ -70,25 +70,25 @@
     }
     
     /*Index main*/
-    .townDataJson {
+    .scooterDataJson {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         justify-content: center;;
         grid-gap: 20px;
       }
       
-      .townDataJson box {
+      .scooterDataJson box {
         display: grid;
         justify-items: center;
         grid-template-rows: 1fr;
       }
     
-      .townDataJson div box {
+      .scooterDataJson div box {
         width: 100%;
         padding: 1em 1em;
       }
     
-      .townDataJson box img{
+      .scooterDataJson box img{
         width: 100%;
       }
 

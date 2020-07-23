@@ -721,44 +721,44 @@ main p {
 .index-main-article a {
   color: black !important; }
 
-.townDataJson {
+.scooterDataJson {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center; }
 
-.townDataJson box {
+.scooterDataJson box {
   background-color: #fffff;
   box-shadow: 0 0 1em;
   border: 5px white;
   border-style: solid;
   margin-bottom: 5%; }
 
-.townDataJson h2 {
+.scooterDataJson h2 {
   color: black;
   font-size: 2em; }
 
-.townDataJson h3 {
+.scooterDataJson h3 {
   color: black;
   font-size: 1em; }
 
-.townDataJson p {
+.scooterDataJson p {
   color: black; }
 
-.townDataJson h2 {
+.scooterDataJson h2 {
   font-size: 40px;
   border-bottom: 1px solid black;
   color: black; }
 
-.townDataJson p {
+.scooterDataJson p {
   margin: 0em 0em;
   text-align: left; }
 
-.townDataJson div {
+.scooterDataJson div {
   padding: 1em 1em;
   display: flex;
   flex-direction: column; }
 
-.townDataJson img {
+.scooterDataJson img {
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -921,24 +921,24 @@ footer a {
   .index-main-article img {
     width: 100%; }
 
-  .townDataJson box {
+  .scooterDataJson box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 1em;
     margin-bottom: 2%; }
 
-  .townDataJson h2 {
+  .scooterDataJson h2 {
     font-size: 24px; }
 
-  .townDataJson box:nth-child(odd) {
+  .scooterDataJson box:nth-child(odd) {
     flex-direction: row-reverse; }
 
-  .townDataJson box div:first-of-type {
+  .scooterDataJson box div:first-of-type {
     display: flex;
     flex-direction: column; }
 
-  .townDataJson box img {
+  .scooterDataJson box img {
     width: 50%;
     height: auto;
     margin: 0 0; }
@@ -1020,22 +1020,22 @@ footer a {
     object-fit: cover; }
 
   /*Index main*/
-  .townDataJson {
+  .scooterDataJson {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     grid-gap: 20px; }
 
-  .townDataJson box {
+  .scooterDataJson box {
     display: grid;
     justify-items: center;
     grid-template-rows: 1fr; }
 
-  .townDataJson div box {
+  .scooterDataJson div box {
     width: 100%;
     padding: 1em 1em; }
 
-  .townDataJson box img {
+  .scooterDataJson box img {
     width: 100%; }
 
   /*Weatherr Gallery*/
