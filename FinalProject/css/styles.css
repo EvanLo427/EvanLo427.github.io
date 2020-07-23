@@ -660,17 +660,12 @@ main li {
   border: 5px white;
   border-style: solid;
   color: black;
-  margin-top: 5%;
-  margin-bottom: 5%; }
-
-.Contact-us-form {
-  max-width: 95%;
-  margin: auto; }
+  margin-top: 2%;
+  margin-bottom: 2%; }
 
 .Contact-info-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  margin: auto; }
+  grid-template-columns: 1fr; }
 
 .contactmethods {
   max-width: 60%;
@@ -814,21 +809,6 @@ footer a {
     grid-template-columns: 1fr 1fr; }
 
   /*Contact info*/
-  .Contact-info {
-    background-color: fffff;
-    box-shadow: 0 0 1em;
-    border: 5px white;
-    border-style: solid;
-    padding: 3em;
-    color: black;
-    text-align: left;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
   .contactinfo {
     display: flex;
     max-width: 100%; }
@@ -938,12 +918,15 @@ footer a {
     float: left;
     margin-right: 2em; }
 
+  #contact-info-page {
+    max-width: 90%;
+    margin: auto; }
+
   .Contact-info-grid {
-    max-width: 100%;
     display: grid;
-    justify-items: center;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 5%; }
+    margin: auto;
+    max-width: 90%; }
 
   /*footer*/ }
 /* end of media query */

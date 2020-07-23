@@ -122,13 +122,15 @@
         float: left;
         margin-right: 2em;
     }
-
+    #contact-info-page{
+        max-width: 90%;
+        margin: auto;
+    }
     .Contact-info-grid{
-        max-width: 100%;
         display: grid;
-        justify-items: center;
         grid-template-columns: 1fr 1fr;
-        margin-bottom: 5%;
+        margin: auto;
+        max-width: 90%;
     }
     /*footer*/
 }
